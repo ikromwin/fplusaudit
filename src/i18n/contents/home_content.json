@@ -1,0 +1,14 @@
+{
+    "en_US": {
+        "title": "Home",
+        "description": "Welcome to our platform! Here you can find various resources and tools to help you manage your tasks efficiently. Explore our features and get started today!"
+    },
+    "uz_UZ": {
+        "title": "Bosh sahifa",
+        "description": "Bizning platformamizga xush kelibsiz! Bu yerda siz vazifalaringizni samarali boshqarish uchun turli resurslar va vositalarni topishingiz mumkin. Bizning funksiyalarimizni o'rganing va bugun boshlang!"
+    },
+    "ru_RU": {
+        "title": "Главная",
+        "description": "Добро пожаловать на нашу платформу! Здесь вы можете найти различные ресурсы и инструменты для эффективного управления вашими задачами. Изучите наши функции и начните сегодня!"
+    }
+}

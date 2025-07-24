@@ -1,0 +1,28 @@
+:root {
+    --main: #3c42c8;
+    --overlay-background: #04074398;
+    --overlay-image: #0407435f;
+    --light: #fff;
+    --light-medium: #bfbfbf;
+    --txt-light: #696969;
+    --grey: #e4e5ea;
+    --grey-medium: #eee;
+    --grey-light: #f1f1f1;
+    --dark: #222;
+    --dark-medium: #363636;
+    --dark-light: #777;
+    --max-width: 1200px;
+    --titles: 1.8rem;
+    --sides-between: 1rem;
+    --items-between: 4rem;
+    --section-top: 8rem;
+    --txt-space: 2em;
+    --space-top: 12rem;
+    --trans: 150ms, background-position 200ms ease-out;
+    --item-radius: 10px;
+}
+
+::selection {
+    background: #363636;
+    color: var(--light);
+}

@@ -1,0 +1,28 @@
+/* 
+    NAVBAR
+*/
+
+@media screen and (max-width: 992px) {
+
+    .responsive-menu {
+        display: flex;
+    }
+
+
+    .logo h1 {
+        font-size: 14px !important;
+    }
+
+    .logo p {
+        display: none;
+        font-size: 12px !important;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+
+
+
+}

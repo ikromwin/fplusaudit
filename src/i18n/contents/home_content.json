@@ -1,14 +1,14 @@
 {
     "en_US": {
-        "title": "Home",
-        "description": "Welcome to our platform! Here you can find various resources and tools to help you manage your tasks efficiently. Explore our features and get started today!"
-    },
-    "uz_UZ": {
-        "title": "Bosh sahifa",
-        "description": "Bizning platformamizga xush kelibsiz! Bu yerda siz vazifalaringizni samarali boshqarish uchun turli resurslar va vositalarni topishingiz mumkin. Bizning funksiyalarimizni o'rganing va bugun boshlang!"
+        "logoSubtitle": "Auditor organization",
+        "heroText": "Providing auditing and professional consulting services to help grow your business as it expands."
     },
     "ru_RU": {
-        "title": "Главная",
-        "description": "Добро пожаловать на нашу платформу! Здесь вы можете найти различные ресурсы и инструменты для эффективного управления вашими задачами. Изучите наши функции и начните сегодня!"
+        "logoSubtitle": "Аудиторская организация",
+        "heroText": "Аудиторские и профессиональные консалтинговые услуги для развития бизнеса"
+    },
+    "uz_UZ": {
+        "logoSubtitle": "Auditorlik tashkiloti",
+        "heroText": "Biznesni to’g’ri yo’lga qo’yish uchun auditorlik tekshiruvi va professional konsalting xizmatlari"
     }
 }

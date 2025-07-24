@@ -3,10 +3,15 @@
 export default function Home({ translations }) {
   const t = translations || {};
 
+  const content = t.home_content || {};
+
   return (
     <main>
-      <h1>{t.welcome_text}</h1>
-      <p>{t.home_content.description}</p>
+      <section className="hero">
+        <h1>{content.heroText || "Loading..."}</h1>
+
+        
+      </section>
     </main>
   );
 }

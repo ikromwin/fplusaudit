@@ -1,10 +1,8 @@
-import './app.css';
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { useLanguage } from "./context/languageContext";
 
 // COMPONENTS
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 
@@ -32,7 +30,6 @@ function App() {
 
 
 
-
             {/* CONTENT */}
             <Routes>
                 <Route path="/" element={<Home translations={content} />} />
@@ -41,8 +38,6 @@ function App() {
                 <Route path="/news" element={<NewsList translations={content} />} />
                 <Route path="/contact" element={<Contact translations={content} />} />
             </Routes>
-
-
 
 
 

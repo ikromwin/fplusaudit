@@ -1,0 +1,266 @@
+/* 
+    === NAVBAR ===
+*/
+
+.navbar {
+    position: sticky;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    background: #fffffff7;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    box-shadow: 0 0 40px #00000020;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.logo h1 {
+    text-transform: uppercase !important;
+    font-size: 18px !important;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.logo p {
+    text-transform: uppercase !important;
+    font-size: 14px !important;
+    font-weight: 400;
+    letter-spacing: .5px;
+    opacity: .6;
+}
+
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-container .flex {
+    display: flex;
+}
+
+.nav-container .nav-links {
+
+    position: relative;
+}
+
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-menu .button {
+    position: relative;
+}
+
+.dropdown .dropdown-button {
+    padding: 10px 15px;
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.nav-container .nav-links a {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.buttons-menu>.button.btn-menu:first-child,
+.button.btn-menu.btn-menu-first {
+    margin-left: 0;
+    padding-left: 1.5em;
+    background-image:
+        linear-gradient(107deg, rgba(0, 0, 0, 0) .8em, var(--main) .85em, var(--main) 40%, rgba(255, 102, 0, 0) 80%),
+        linear-gradient(287deg, rgba(0, 0, 0, 0) .8em, var(--main) .85em, var(--main) 40%, rgba(255, 102, 0, 0) 80%),
+        linear-gradient(107deg, rgba(0, 0, 0, 0) .8em, var(--main) .85em, var(--main) .95em, rgba(0, 0, 0, 0) 1em),
+        linear-gradient(287deg, rgba(0, 0, 0, 0) .8em, rgba(0, 0, 0, 0) .85em, rgba(0, 0, 0, 0) .95em, rgba(0, 0, 0, 0) 1em),
+        linear-gradient(107deg, rgba(0, 0, 0, 0) .8em, var(--grey) .85em, var(--grey) 40%, rgba(194, 211, 222, 0) 80%),
+        linear-gradient(287deg, rgba(0, 0, 0, 0) .8em, var(--grey) .85em, var(--grey) 40%, rgba(194, 211, 222, 0) 80%),
+        linear-gradient(107deg, rgba(0, 0, 0, 0) .8em, var(--grey) .85em, var(--grey) 40%, rgba(242, 244, 246, 0) 80%),
+        linear-gradient(287deg, rgba(0, 0, 0, 0) .8em, var(--grey) .85em, var(--grey) 40%, rgba(242, 244, 246, 0) 80%);
+}
+
+.button.btn-menu {
+    max-height: 50px;
+    margin: 0 -0.6em;
+    padding: 6px 1.66em;
+    background-color: transparent !important;
+    background-image:
+        linear-gradient(107deg, rgba(0, 0, 0, 0) .8em, var(--main) .85em, var(--main) 40%, #ff660000 80%),
+        linear-gradient(287deg, rgba(0, 0, 0, 0) .8em, var(--main) .85em, var(--main) 40%, #ff660000 80%),
+        linear-gradient(107deg, rgba(0, 0, 0, 0) .8em, #ff000000 .85em, #00000000 .95em, #00000000 1em),
+        linear-gradient(287deg, rgba(0, 0, 0, 0) .8em, #00000000 .85em, #00000000 .95em, #00000000 1em),
+        linear-gradient(107deg, rgba(0, 0, 0, 0) .8em, var(--grey) .85em, var(--grey) 40%, #c2d3de00 80%),
+        linear-gradient(287deg, rgba(0, 0, 0, 0) .8em, var(--grey) .85em, var(--grey) 40%, #c2d3de00 80%),
+        linear-gradient(107deg, rgba(0, 0, 0, 0) .8em, var(--grey) .85em, var(--grey) 40%, #f2f4f600 80%),
+        linear-gradient(287deg, rgba(0, 0, 0, 0) .8em, var(--grey) .85em, var(--grey) 40%, #f2f4f600 80%);
+
+    background-position: left -0.60em top 2em,
+        right 0.8em top 2em,
+        left 0em top 0em,
+        right 0em top 0em;
+
+    background-size:
+        100% 2em;
+    background-repeat: no-repeat;
+    border: none !important;
+    transition: color 150ms, background-position 200ms ease-out;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+.button.btn-menu:hover,
+.button.btn-menu:focus,
+.button.btn-menu.active {
+    color: var(--light);
+    background-position:
+        left 0em top 0em,
+        right 0em top 0em,
+        left 0em top 0em,
+        right 0em top 0em,
+        left 0.7em top -2em,
+        right -0.8em top -2em,
+        left 0em top 0em,
+        right 0em top 0em;
+}
+
+
+.nav-links .button.btn-menu {
+    position: relative;
+}
+
+.nav-links .button.btn-menu .dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #0001;
+    box-shadow: 0 4px 16px #0001;
+    border-radius: 0 0 8px 8px;
+    z-index: 100;
+    padding: 0.5rem 0;
+}
+
+.nav-links .button.btn-menu:hover .dropdown,
+.nav-links .button.btn-menu:focus-within .dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown .dropdown-button {
+    padding: 10px 20px;
+    color: #444;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    background: none;
+    border: none;
+}
+
+.dropdown .dropdown-button.active,
+.dropdown .dropdown-button:hover {
+    background: var(--main);
+    color: var(--light);
+}
+
+/* 
+    LOCALE
+*/
+.lang-locale {
+    position: relative;
+    width: 135px;
+    display: flex;
+    align-items: center;
+}
+
+.lang-locale svg {
+    width: 18px;
+}
+
+.lang-locale select {
+    padding-left: 20px;
+    position: absolute;
+    width: 100%;
+    max-width: 92px;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.lang-locale:hover select {
+    color: var(--light);
+    transition: 0.2s;
+}
+
+.lang-locale:hover select option {
+    color: var(--dark);
+    background: var(--light);
+}
+
+/* 
+    === MEDIA QUERIES ===
+*/
+.responsive-menu {
+    display: none;
+}
+
+.responsive-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+
+.responsive-button p {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/* 
+    === FOOTER ===
+*/

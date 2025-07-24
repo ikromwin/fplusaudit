@@ -1,9 +1,18 @@
 
-import home_content from "./contents/home_content";
+import home_content from "./contents/home_content.json";
 
 export const i18n = {
     en_US: {
         CONTENT: {
+            // COMMON
+            // Navbar
+            logoSubtitle: "Auditor organization",
+
+
+            // Footer
+
+
+
             // Home page
             home: "Home",
             home_content: home_content.en_US,
@@ -30,6 +39,12 @@ export const i18n = {
     },
     uz_UZ: {
         CONTENT: {
+            // COMMON
+            // Navbar
+            logoSubtitle: "Auditorlik tashkiloti",
+
+
+            // Footer
             // Home page
             home: "Bosh sahifa",
             home_content: home_content.uz_UZ,
@@ -55,6 +70,12 @@ export const i18n = {
     },
     ru_RU: {
         CONTENT: {
+            // COMMON
+            // Navbar
+            logoSubtitle: "Аудиторская организация",
+
+
+            // Footer
             // Home page
             home: "Главная",
             home_content: home_content.ru_RU,

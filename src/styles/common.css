@@ -111,7 +111,7 @@
 }
 
 .button.btn-menu {
-    max-height: 50px;
+    max-height: 50px !important;
     margin: 0 -0.6em;
     padding: 6px 1.66em;
     background-color: transparent !important;

@@ -21,8 +21,18 @@
     .nav-container {
         display: none;
     }
+}
 
+@media screen and (max-width: 552px) {
 
+    .hero {
+        height: 54vh;
+    }
 
-
+    .hero .hero-text {
+        padding-right: 1.5rem;
+        font-size: 1.5rem !important;
+        line-height: 3rem !important;
+        text-align: center;
+    }
 }

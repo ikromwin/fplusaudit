@@ -23,6 +23,6 @@
 }
 
 ::selection {
-    background: #363636;
+    background: #000;
     color: var(--light);
 }

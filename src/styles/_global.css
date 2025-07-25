@@ -16,13 +16,28 @@
     --sides-between: 1rem;
     --items-between: 4rem;
     --section-top: 8rem;
-    --txt-space: 2em;
+    --txt-space: 1.6em;
     --space-top: 12rem;
     --trans: 150ms, background-position 200ms ease-out;
     --item-radius: 10px;
+
+
 }
 
 ::selection {
-    background: #000;
+    background: #4a58b8;
     color: var(--light);
+}
+
+
+.sec-title {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: var(--titles);
+    color: var(--dark-medium);
+}
+
+section {
+    padding-top: var(--section-top);
 }

@@ -25,7 +25,7 @@ export function LanguageProvider({ children }) {
         setLang: (newLang) => {
             setLoading(true);
             setLang(newLang);
-            setTimeout(() => setLoading(false), 300); // simulate loading
+            setTimeout(() => setLoading(false), 800); // simulate loading
         },
         content: i18n[lang]?.CONTENT || i18n[defaultLanguage].CONTENT,
         data: i18n[lang]?.DATA || i18n[defaultLanguage].DATA,

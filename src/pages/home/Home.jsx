@@ -3,6 +3,7 @@ import Banner from "../../assets/banner.png";
 import ErrorContent from "../../components/ErrorContent.jsx";
 import Thumbnail from "../../assets/thumbnail.jpg";
 import Video from "../../assets/video.mp4";
+import { useLanguage } from "../../context/languageContext.jsx";
 
 
 
@@ -35,6 +36,7 @@ import P21 from "../../assets/partners/p21.png";
 import P22 from "../../assets/partners/p22.png";
 import P23 from "../../assets/partners/p23.png";
 import P24 from "../../assets/partners/p24.png";
+import NewsCard from "../../components/NewsCard.jsx";
 
 const PARTNER_LOGOS = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, P17, P18, P19, P20, P21, P22, P23, P24];
 
@@ -48,6 +50,8 @@ function shuffleArray(array) {
 }
 
 export default function Home({ translations }) {
+  const { data } = useLanguage();
+
   const t = translations || {};
   const content = t.home_content || {};
   const [showModal, setShowModal] = useState(false);
@@ -276,7 +280,17 @@ export default function Home({ translations }) {
         <h2 className="sec-title maxWidth">{"Latest news" || <ErrorContent />}</h2>
 
         <div className="block">
-
+          <div className="items">
+            {data.news && data.news.length > 0 ? data.news.map((newsItem, index) => (
+              <NewsCard
+                key={index}
+                imgSrc={newsItem.image || Thumbnail}
+                title={newsItem.title || "No title available"}
+                date={newsItem.date || "No date available"}
+                href={`/news/${newsItem.id}`}
+              />
+            )) : <ErrorContent />}
+          </div>
         </div>
 
       </section>

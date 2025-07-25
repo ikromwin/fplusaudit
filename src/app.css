@@ -152,10 +152,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background-color: var(--main);
-    border-radius: 20px;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,13 +170,13 @@
 
 .home-about .block .hero-about-video .play:active {
     transition: 0s;
-    background: var(--dark);
+    background: var(--light);
 }
-
 .home-about .block .hero-about-video .play:hover svg {
-    fill: var(--light);
+    fill: var(--grey);
     transition: .3s;
     user-select: none;
+    transform: scale(1.1);
 }
 
 .home-about .block .hero-about-video img {
@@ -286,7 +286,7 @@
 
 /* Add left and right shadow overlays */
 
-.home-partners .sec-title{
+.home-partners .sec-title {
     padding: 0 1rem;
 }
 

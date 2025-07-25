@@ -1,5 +1,6 @@
 
 import home_content from "./contents/home_content.json";
+import news_data from "./data/news_data.json";
 
 export const i18n = {
     en_US: {
@@ -30,10 +31,7 @@ export const i18n = {
             contact: "Contact",
         },
         DATA: {
-            news: [
-                { id: 1, title: "Latest News", content: "This is the latest news content." },
-                { id: 2, title: "Upcoming Events", content: "Details about upcoming events." }
-            ]
+            news: news_data.en_US
         },
 
     },
@@ -62,10 +60,7 @@ export const i18n = {
             contact: "Aloqa",
         },
         DATA: {
-            news: [
-                { id: 1, title: "Latest News", content: "This is the latest news content." },
-                { id: 2, title: "Upcoming Events", content: "Details about upcoming events." }
-            ],
+            news: news_data.uz_UZ
         }
     },
     ru_RU: {
@@ -93,10 +88,7 @@ export const i18n = {
             contact: "Контакты",
         },
         DATA: {
-            news: [
-                { id: 1, title: "Последние новости", content: "Это содержание последних новостей." },
-                { id: 2, title: "Предстоящие события", content: "Детали о предстоящих событиях." }
-            ],
+            news: news_data.ru_RU
         }
     },
 }

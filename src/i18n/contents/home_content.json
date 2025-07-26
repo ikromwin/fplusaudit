@@ -25,7 +25,8 @@
             "Professional knowledge",
             "Data privacy"
         ],
-        "partnerTitle": "Our partners"
+        "partnerTitle": "Our partners",
+        "newsTitle": "Latest news"
     },
     "ru_RU": {
         "logoSubtitle": "Аудиторская организация",
@@ -53,7 +54,8 @@
             "Профессиональные знания",
             "Конфиденциальность данных"
         ],
-        "partnerTitle": "Наши партнеры"
+        "partnerTitle": "Наши партнеры",
+        "newsTitle": "Последние новости"
     },
     "uz_UZ": {
         "logoSubtitle": "Auditorlik tashkiloti",
@@ -81,6 +83,7 @@
             "Kasbiy bilimga egalik",
             "Axborotning maxfiyligi"
         ],
-        "partnerTitle": "Hamkorlarimiz"
+        "partnerTitle": "Hamkorlarimiz",
+        "newsTitle": "So'ngi yangiliklar"
     }
 }

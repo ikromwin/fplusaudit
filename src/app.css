@@ -2,6 +2,7 @@
 
 * {
     font-family: "Geologica", sans-serif;
+    scrollbar-width: thin;
 }
 
 .maxWidth {
@@ -168,15 +169,12 @@
     transform: translate(-50%, -50%) scale(0.9);
 }
 
-.home-about .block .hero-about-video .play:active {
-    transition: 0s;
-    background: var(--light);
-}
-.home-about .block .hero-about-video .play:hover svg {
-    fill: var(--grey);
-    transition: .3s;
+.home-about .block .hero-about-video .play {
     user-select: none;
-    transform: scale(1.1);
+}
+
+.home-about .block .hero-about-video .play:active svg {
+    opacity: 0.4;
 }
 
 .home-about .block .hero-about-video img {
@@ -350,4 +348,21 @@
     100% {
         transform: translateX(-50%);
     }
+}
+
+
+.news .sec-title{
+    padding: 0 1rem;
+}
+.news .block {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+.news .block .items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    row-gap: 2rem;
 }

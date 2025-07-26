@@ -277,7 +277,7 @@ export default function Home({ translations }) {
         ================================================
       */}
       <section className="news maxWidth">
-        <h2 className="sec-title maxWidth">{"Latest news" || <ErrorContent />}</h2>
+        <h2 className="sec-title maxWidth">{content.newsTitle || <ErrorContent />}</h2>
 
         <div className="block">
           <div className="items">

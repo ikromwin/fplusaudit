@@ -4,11 +4,11 @@ function NewsCard({ imgSrc, title, date, href }) {
     return (
         <Link to={href} className="news-card">
             <div className="card-image">
-                <img src={imgSrc} alt={title} />
+                <img src={imgSrc} alt="News image to show main picture." />
             </div>
 
             <div className="card-text">
-                <h3>{title.length > 90 ? title.slice(0, 90) + ".." : title}</h3>
+                <h3 title={title}>{title.length > 90 ? title.slice(0, 90) + ".." : title}</h3>
 
                 <p>
                     <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#6e7783ff">

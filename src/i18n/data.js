@@ -1,7 +1,10 @@
 
-import Footer from "../components/Footer";
 import home_content from "./contents/home_content.json";
+import services_content from "./contents/services_content.json";
+import contact_content from "./contents/contact_content.json";
+
 import news_data from "./data/news_data.json";
+
 
 export const i18n = {
     en_US: {
@@ -15,6 +18,7 @@ export const i18n = {
             footerContactUs: "Contact Us",
             footerTimes: "<span>Working hours:</span> from Monday to Friday at 9:00-17:00",
             footerAddress: "<span>Address:</span> Tashkent city, Yashnabad district, Cholpon MFY, Fergana road, 5a-house, room 26.",
+            footerCopyRights: "2016, © 'F-PLUS AUDIT' LLC Audit organization.",
 
 
 
@@ -29,12 +33,14 @@ export const i18n = {
 
             // Services page
             services: "Services",
+            services_content: services_content.en_US,
 
             // News page
             news: "News",
 
             // News page
             contact: "Contact",
+            contact_content: contact_content.en_US,
 
             // Vacancy page
             vacancy: "Vacancy",
@@ -55,6 +61,7 @@ export const i18n = {
             footerContactUs: "Связаться с нами",
             footerTimes: "<span>Время работы:</span> с понедельника по пятницу с 9:00 до 17:00",
             footerAddress: "<span>Адрес:</span> г. Ташкент, Яшнабадский район, МФЙ Чолпон, Ферганская дорога, дом 5а, комната 26.",
+            footerCopyRights: "2016, © 'F-PLUS AUDIT' ООО Аудиторская организация.",
 
 
             // Footer
@@ -67,12 +74,14 @@ export const i18n = {
 
             // Services page
             services: "Услуги",
+            services_content: services_content.ru_RU,
 
             // News page
             news: "Новости",
 
             // Contact page
             contact: "Контакты",
+            contact_content: contact_content.ru_RU,
 
             // Vacancy page
             vacancy: "Вакансии",
@@ -94,6 +103,7 @@ export const i18n = {
             footerContactUs: "Biz bilan bog'lanish",
             footerTimes: "<span>Ish vaqti:</span> dushanbadan jumagacha 9:00-17:00",
             footerAddress: "<span>Manzil:</span> Toshkent shahar, Yashnobod tumani, Cho'lpon MFY, Farg'ona yo'li, 5a-uy, 26-xona.",
+            footerCopyRights: "2016, © 'F-PLUS AUDIT' MChJ Auditorlik tashkiloti.",
 
 
 
@@ -107,12 +117,14 @@ export const i18n = {
 
             // Services page
             services: "Xizmatlar",
+            services_content: services_content.uz_UZ,
 
             // News page
             news: "Yangiliklar",
 
             // News page
             contact: "Aloqa",
+            contact_content: contact_content.uz_UZ,
 
             // Vacancy page
             vacancy: "Vakansiya",

@@ -12,7 +12,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Services from "./pages/services/Services";
 import NewsList from './pages/news/NewsList';
-import Contact from './pages/contact/contact';
+import Contact from './pages/contact/Contact';
 
 
 
@@ -20,7 +20,8 @@ import Contact from './pages/contact/contact';
 function App() {
 
     const { content } = useLanguage();
-
+    console.log(content);
+    
 
     return (
         <div className="App">

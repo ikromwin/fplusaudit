@@ -13,11 +13,11 @@ export default function Footer({ translations }) {
         <footer className="footer">
             <div className="maxWidth">
                 <div className="logo">
-                    <img src={WhiteLogo} alt="Logo" />
+                    <img src={WhiteLogo} alt="White Logo" />
                 </div>
 
                 <div className="overlay">
-                    <img src={WhiteLogo} alt="Logo" />
+                    <img src={WhiteLogo} alt="White Logo for overlay background" />
                 </div>
 
                 <ul className='footer-list'>
@@ -28,13 +28,13 @@ export default function Footer({ translations }) {
 
                         <div className='socials'>
                             <a href="tell://78 555 00 70">
-                                <img src={Phone} alt="78 555 00 70" />
+                                <img src={Phone} alt="Phone Call to Contact." />
                             </a>
                             <a href="mailto:info@f-plusaudit.uz">
-                                <img src={Email} alt="info@f-plusaudit.uz" />
+                                <img src={Email} alt="Mail to Contact." />
                             </a>
                             <a href="https://t.me/fplusaudit" target="_blank">
-                                <img src={Telegram} alt="fplusaudit" />
+                                <img src={Telegram} alt="Telegram chanell to show up-to-date posts, blogs, and news." />
                             </a>
                         </div>
                     </li>
@@ -56,7 +56,7 @@ export default function Footer({ translations }) {
                 </div>
 
                 <div className='footer-line'></div>
-                <p className='footer-copyright'>2016-2025 © 'F-PLUS AUDIT' LLC Audit organization.</p>
+                <p className='footer-copyright'>{t.footerCopyRights}</p>
             </div>
         </footer>
     );

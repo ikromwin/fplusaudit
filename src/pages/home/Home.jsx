@@ -99,7 +99,7 @@ export default function Home({ translations }) {
           <h1 className="hero-text">{content.heroText || <ErrorContent />}</h1>
         </div>
         <div className="hero-image">
-          <img src={Banner} alt="Banner" />
+          <img src={Banner} alt="Home Page Hero Banner | Signle" />
         </div>
       </div>
 

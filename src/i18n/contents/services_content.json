@@ -1,0 +1,53 @@
+{
+    "en_US": {
+        "LineTitle": "Our services",
+        "subTitle": "Provides audit services in the form of audit checks and other audit services.",
+        "services": [
+            "Advice on the application of tax legislation, calculations on taxes and fees, drawing up declarations",
+
+            "Analysis of financial and economic activities and financial planning, including preparation of business plans, economic, financial advice and management advice.",
+
+            "Automation of accounting and financial reporting, development of recommendations for information security of financial information.",
+
+            "Organization of accounting, restoration, maintenance and formation of financial statements, including financial statements on International Financial Reporting Standards",
+
+            "Accounting law and financial reporting",
+
+            "Audit Commission of a legal entity (reviser), implementation of the duties of a trustee of investment assets"
+        ]
+    },
+    "ru_RU": {
+        "LineTitle": "Наши услуги",
+        "subTitle": "Предоставляет аудиторские услуги в виде аудиторских проверок и прочих аудиторских услугх.",
+        "services": [
+            "Консультации по вопросам применения налогового законодательства, расчетов по налогам и сборам, составления деклараций.",
+
+            "Анализ финансово-хозяйственной деятельности и финансовое планирование, включая подготовку бизнес-планов, экономические, финансовые консультации и рекомендации по управлению.",
+
+            "Автоматизация бухгалтерского учета и финансовой отчетности, разработка рекомендаций по информационной безопасности финансовой информации.",
+
+            "Организация бухгалтерского учета, восстановление, ведение и формирование финансовой отчетности, в том числе финансовой отчетности по Международным стандартам финансовой отчетности.",
+
+            "Законодательство о бухгалтерском учете и финансовой отчетности.",
+
+            "Ревизионная комиссия юридического лица (в новой редакции), исполняющая обязанности доверительного управляющего инвестиционными активами."
+        ]
+    },
+    "uz_UZ": {
+        "LineTitle": "Bizning xizmatlarimiz",
+        "subTitle": "Auditorlik tekshiruvlari va turdosh xizmatlari turidagi auditorlik xizmatlarini ko'rsatadi.",
+        "services": [
+            "Soliqqa oid qonunchilikni qo'llash, soliqlar va yig'imlar bo'yicha hisob-kitoblar, deklarasiyalar tuzish yuzasidan maslahatlar berish.",
+
+            "Moliya-xo'jalik faoliyatini tahlil qilish va moliyaviy rejalashtirish, shu jumladan biznes-rejalar tayyorlash, iqtisodiy, moliyaviy maslahat va boshqaruvga oid maslahat berish.",
+
+            "Buxgalteriya hisobini yuritishni avtomatlashtirish va moliyaviy hisobot tuzish, moliyaviy axborotning axborot xavfsizligi bo'yicha tavsiyalar ishlab chiqish.",
+
+            "Buxgalteriya hisobini yo'lga qo'yish, qayta tiklash, yuritish va moliyaviy hisobot tuzish, shu jumladan moliyaviy hisobotning xalqaro standartlari bo'yicha moliyaviy hisobot tuzish.",
+
+            "Buxgalteriya hisobini yuritish va moliyaviy hisobot tuzish masalalari bo'yicha maslahat berish.",
+
+            "Yuridik shaxsning taftish komissiyasi (taftishchisi), investisiya aktivlarini ishonchli boshqaruvchi vazifalarini amalga oshirish."
+        ]
+    }
+}

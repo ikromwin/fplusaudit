@@ -131,6 +131,10 @@
         flex: 0 0 145px;
     }
 
+    .page__services .items {
+        grid-template-columns: 1fr !important;
+        grid-gap: 1rem !important;
+    }
 
 }
 
@@ -160,5 +164,7 @@
     .footer .footer-list {
         flex-direction: column;
     }
+
+
 
 }

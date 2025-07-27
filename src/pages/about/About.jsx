@@ -1,9 +1,10 @@
+import Linetitle from "../../components/LineTitleComponent";
 
 
 export default function About({ translations }) {
   return (
-    <main>
-      <h1>About</h1>
-    </main>
+    <div>
+      <Linetitle title={"About"}></Linetitle>
+    </div>
   );
 }

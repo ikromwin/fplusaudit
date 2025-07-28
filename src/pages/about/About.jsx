@@ -1,10 +1,38 @@
 import Linetitle from "../../components/LineTitleComponent";
 
-
 export default function About({ translations }) {
+  const t = translations
+  const content = t.about_content
+
+
   return (
-    <div>
-      <Linetitle title={"About"}></Linetitle>
+    <div className="page__aboutUs maxWidth">
+      <Linetitle title={t.about}></Linetitle>
+
+      <p className="aboutUs-content" dangerouslySetInnerHTML={{ __html: content.aboutContent }} />
+
+
+
+      <section className="aboutUs-employee maxWidth">
+        <h1 className="sec-title">Hodimlarimiz</h1>
+        <div className="items">
+          {content.employee.map(item =>
+            <div className="item" key={item.id}>
+              <div className="aboutUs-image">
+                <img src={item.image} alt="" />
+              </div>
+
+              <div className="aboutUs-info">
+                <h1>{item.name}</h1>
+                <span>{item.jobTitle}</span>
+
+                <p>{item.description}</p>
+              </div>
+            </div>
+          )}
+
+        </div>
+      </section>
     </div>
   );
 }

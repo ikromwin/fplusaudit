@@ -173,4 +173,14 @@
     .page__contact form .input-group textarea {
         font-size: 14px;
     }
+
+    .page__aboutUs .aboutUs-employee .items .item {
+        flex-direction: column;
+        align-items: start !important;
+        gap: 1rem !important;
+    }
+
+    .page__aboutUs .aboutUs-employee .items .item h1 {
+        font-size: 1rem !important;
+    }
 }

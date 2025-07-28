@@ -1,9 +1,12 @@
 
 import home_content from "./contents/home_content.json";
+import about_content from "./contents/about_content.json";
 import services_content from "./contents/services_content.json";
 import contact_content from "./contents/contact_content.json";
 
 import news_data from "./data/news_data.json";
+import achievements_data from "./data/achievements_data.json";
+import achievements_category from "./data/achievements_category_data.json";
 
 
 export const i18n = {
@@ -29,7 +32,15 @@ export const i18n = {
 
 
             // About page
-            about: "About",
+            about: "About Us",
+            about_content: about_content.en_US,
+            achievements_data: achievements_data.en_US,
+            achievements_category: achievements_category.en_US,
+
+
+            // About Details
+            about_table_name: "Names of certificates",
+            about_table_years: "Given years",
 
             // Services page
             services: "Services",
@@ -72,6 +83,13 @@ export const i18n = {
 
             // About page
             about: "О нас",
+            about_content: about_content.ru_RU,
+
+            // About Details
+            about_table_name: "Названия сертификатов",
+            about_table_years: "Дано лет",
+            achievements_data: achievements_data.ru_RU,
+            achievements_category: achievements_category.ru_RU,
 
             // Services page
             services: "Услуги",
@@ -116,6 +134,13 @@ export const i18n = {
 
             // About page
             about: "Biz haqimizda",
+            about_content: about_content.uz_UZ,
+
+            // About Details
+            about_table_name: "Sertifikat nomlari",
+            about_table_years: "Berilgan yili",
+            achievements_data: achievements_data.uz_UZ,
+            achievements_category: achievements_category.uz_UZ,
 
             // Services page
             services: "Xizmatlar",

@@ -1,26 +1,26 @@
 import { Link, NavLink } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "../context/languageContext"
 import BlackLogo from "../assets/logo-black.svg";
 
 import "../styles/common.css";
 
+import AchievementCategory from "../i18n/data/achievements_category_data.json"
 
 export default function Navbar() {
     const { lang, setLang, content } = useLanguage();
 
     const link = [
         { to: "/", label: content.home },
-        {
-            to: "/about", label: content.about + " " + "▾",
-            dropDown: [
-                { to: "/about/mission", label: "test" }
-            ]
-        },
+        { to: "/about", label: content.about + " " + "▾" },
         { to: "/services", label: content.services },
         { to: "/news", label: content.news },
         { to: "/contact", label: content.contact }
     ]
+
+    console.log(content.achievements_category);
+
+
+
 
     return (
         <nav className="navbar">
@@ -42,15 +42,23 @@ export default function Navbar() {
                                 <NavLink key={index} to={item.to} className={({ isActive }) => isActive ? "button btn-menu active" : "button btn-menu"}>
                                     {item.label}
 
-                                    {item.to === "/about" ? item.dropDown && (
+                                    {item.to === "/about" && (
                                         <div className="dropdown">
-                                            {item.dropDown.map((dropItem, dropIndex) => (
-                                                <NavLink key={dropIndex} to={dropItem.to} className={({ isActive }) => isActive ? "dropdown-button active" : "dropdown-button"}>
-                                                    {dropItem.label}
+                                            {AchievementCategory[lang].map((dropItem, dropIndex) => (
+                                                <NavLink
+                                                    key={dropIndex}
+                                                    to={`/about/${dropItem.slug}`}
+                                                    className={({ isActive }) =>
+                                                        isActive ? "dropdown-button active" : "dropdown-button"
+                                                    }
+                                                >
+                                                    {dropItem.title}
                                                 </NavLink>
                                             ))}
                                         </div>
-                                    ) : null}
+                                    )}
+
+
                                 </NavLink>
                             ))
                         }

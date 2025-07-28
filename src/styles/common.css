@@ -165,13 +165,17 @@
     position: absolute;
     left: 0;
     top: 100%;
-    width: 100%;
+    max-width: 500px;
     background: #fff;
     border: 1px solid #0001;
     box-shadow: 0 4px 16px #0001;
     border-radius: 0 0 8px 8px;
     z-index: 100;
     padding: 0.5rem 0;
+}
+
+.nav-links .button.btn-menu .dropdown a {
+    font-size: 14px;
 }
 
 .nav-links .button.btn-menu:hover .dropdown,

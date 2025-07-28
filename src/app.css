@@ -610,3 +610,110 @@
     gap: 1rem;
     row-gap: 2rem;
 }
+
+
+/* ABOUT PAGE */
+.page__aboutUs {
+    padding: 0 1rem;
+}
+
+.page__aboutUs .aboutUs-content {
+    font-weight: 200;
+    color: var(--txt-light);
+    font-size: 16px;
+    line-height: var(--txt-space);
+}
+
+
+.page__aboutUs .aboutUs-employee .items {
+    display: grid;
+    gap: 2rem;
+}
+
+.page__aboutUs .aboutUs-employee .items .item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.page__aboutUs .aboutUs-employee .items .item .aboutUs-image img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border: 8px solid var(--grey);
+    object-position: top;
+}
+
+.page__aboutUs .aboutUs-employee .items .item .aboutUs-info h1 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--grey-dark);
+    margin-bottom: 10px;
+}
+
+.page__aboutUs .aboutUs-employee .items .item .aboutUs-info span {
+    color: var(--main);
+    font-weight: 200;
+}
+
+.page__aboutUs .aboutUs-employee .items .item .aboutUs-info p {
+    font-weight: 200;
+    color: var(--txt-light);
+    font-size: 16px;
+    line-height: var(--txt-space);
+    margin-top: 16px;
+}
+
+
+/* ABOUT DETAILS */
+.page__aboutDetails {
+    padding: 0 1rem;
+}
+
+.page__aboutDetails table {
+    width: 100%;
+    padding: 1rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table thead {
+    text-align: left;
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+table thead tr th {
+    font-style: italic;
+    font-weight: 200;
+    color: var(--light);
+    background: var(--main);
+}
+
+table thead tr th:last-child {
+    max-width: 120px;
+    text-align: left;
+}
+
+table th {
+    padding: .8rem 12px;
+    border: 1px solid #ccc;
+}
+
+table tbody td,
+table tbody tr {
+    font-size: 14px;
+    color: var(--txt-light);
+    border: 1px solid #ccc;
+    font-weight: 200;
+}
+
+table td,
+table th {
+    padding: .8rem 12px;
+    border: 1px solid #ccc;
+}

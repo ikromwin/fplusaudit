@@ -37,6 +37,7 @@ export const i18n = {
 
             // News page
             news: "News",
+            goBack: "Go back",
 
             // News page
             contact: "Contact",
@@ -78,6 +79,7 @@ export const i18n = {
 
             // News page
             news: "Новости",
+            goBack: "Возвращаться",
 
             // Contact page
             contact: "Контакты",
@@ -121,6 +123,7 @@ export const i18n = {
 
             // News page
             news: "Yangiliklar",
+            goBack: "Orqaga qaytish",
 
             // News page
             contact: "Aloqa",

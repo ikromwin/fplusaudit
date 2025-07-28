@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "../context/languageContext"
 import BlackLogo from "../assets/logo-black.svg";
 
@@ -13,10 +14,7 @@ export default function Navbar() {
         {
             to: "/about", label: content.about + " " + "▾",
             dropDown: [
-                { to: "/about/mission", label: "test" },
-                { to: "/about/team", label: "test" },
-                { to: "/about/partners", label: "test" },
-                { to: "/about/certificates", label: "test" }
+                { to: "/about/mission", label: "test" }
             ]
         },
         { to: "/services", label: content.services },

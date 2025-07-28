@@ -1,0 +1,7 @@
+PAGES:
+ - About
+ - Vacancy
+
+FUNCTIONS:
+ - tg form
+ - tests

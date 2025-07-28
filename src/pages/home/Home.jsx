@@ -279,7 +279,7 @@ export default function Home({ translations }) {
       <section className="news maxWidth">
         <h2 className="sec-title maxWidth">{content.newsTitle || <ErrorContent />}</h2>
 
-        <div className="block">
+        <div className="news-component">
           <div className="items">
             {data.news && data.news.length > 0 ? data.news.map((newsItem, index) => (
               <NewsCard

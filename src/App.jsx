@@ -1,27 +1,32 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useLanguage } from "./context/languageContext";
+import { AnimatePresence, motion } from "framer-motion";
 
 // COMPONENTS
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 
 // PAGES
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
+import AboutDetails from "./pages/about/AboutDetails";
 import Services from "./pages/services/Services";
 import NewsList from './pages/news/NewsList';
+import NewsDetails from './pages/news/NewsDetails';
 import Contact from './pages/contact/Contact';
 
 
 
 
+// ...existing code...
+
 function App() {
 
-    const { content } = useLanguage();
-    console.log(content);
-    
+    const { content, lang } = useLanguage();
+    const location = useLocation();
 
     return (
         <div className="App">
@@ -29,23 +34,59 @@ function App() {
             {/* NAVBAR */}
             <Navbar />
 
-
-
             {/* CONTENT */}
-            <Routes>
-                <Route path="/" element={<Home translations={content} />} />
-                <Route path="/about" element={<About translations={content} />} />
-                <Route path="/services" element={<Services translations={content} />} />
-                <Route path="/news" element={<NewsList translations={content} />} />
-                <Route path="/contact" element={<Contact translations={content} />} />
-            </Routes>
+            <AnimatePresence mode="wait">
+                <motion.div
+                    key={`${lang}-${location.pathname}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                >
+                    <ScrollToTop />
+                    <AnimatePresence mode="wait">
+                        <Routes location={location} key={location.pathname}>
+                            <Route
+                                path="/"
+                                element={<Home translations={content} />}
+                            />
+                            <Route
+                                path="/about"
+                                element={<About translations={content} />}
+                            />
+                            <Route
+                                path="/about/:id"
+                                element={<AboutDetails translations={content} />}
+                            />
+                            <Route
+                                path="/services"
+                                element={<Services translations={content} />}
+                            />
+                            <Route
+                                path="/news"
+                                element={<NewsList translations={content} />}
+                            />
+                            <Route
+                                path="/news/:id"
+                                element={<NewsDetails translations={content} />}
+                            />
+                            <Route
+                                path="/contact"
+                                element={<Contact translations={content} />}
+                            />
+                        </Routes>
+                    </AnimatePresence>
+
+                    {/* FOOTER */}
+                    <Footer translations={content}></Footer>
 
 
-
-            {/* FOOTER */}
-            <Footer translations={content}></Footer>
+                </motion.div>
+            </AnimatePresence>
         </div>
     );
 }
+
+//
 
 export default App;

@@ -2,6 +2,7 @@ import WhiteLogo from '../assets/logo-white.svg';
 import Email from '../assets/email.svg';
 import Phone from '../assets/phone.svg';
 import Telegram from '../assets/TG.svg';
+import { Link, NavLink } from 'react-router-dom';
 
 
 export default function Footer({ translations }) {
@@ -41,12 +42,12 @@ export default function Footer({ translations }) {
                     <li className='list-links'>
                         <h3>{t.footerContactUs}</h3>
                         <ul>
-                            <li><a href="/">{t.home}</a></li>
-                            <li><a href="/about">{t.about}</a></li>
-                            <li><a href="/services">{t.services}</a></li>
-                            <li><a href="/news">{t.news}</a></li>
-                            <li><a href="/contact">{t.contact}</a></li>
-                            <li><a href="/vacancy">{t.vacancy}</a></li>
+                            <li><NavLink to="/">{t.home}</NavLink></li>
+                            <li><NavLink to="/about">{t.about}</NavLink></li>
+                            <li><NavLink to="/services">{t.services}</NavLink></li>
+                            <li><NavLink to="/news">{t.news}</NavLink></li>
+                            <li><NavLink to="/contact">{t.contact}</NavLink></li>
+                            <li><NavLink to="/vacancy">{t.vacancy}</NavLink></li>
                         </ul>
                     </li>
                 </ul>

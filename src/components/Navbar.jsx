@@ -17,7 +17,7 @@ export default function Navbar() {
         { to: "/contact", label: content.contact }
     ]
 
-    console.log(content.achievements_category);
+    
 
 
 

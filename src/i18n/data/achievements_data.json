@@ -1,9 +1,26 @@
 {
     "en_US": [
         {
-            "category": ""
+            "category": "external-quality-control",
+            "title": "Tashqi sifat nazorati",
+            "givenYear": "2023",
+            "expiredYear": ""
         }
     ],
-    "ru_RU": {},
-    "uz_UZ": {}
+    "ru_RU": [
+        {
+            "category": "external-quality-control",
+            "title": "Tashqi sifat nazorati",
+            "givenYear": "2023",
+            "expiredYear": ""
+        }
+    ],
+    "uz_UZ": [
+        {
+            "category": "external-quality-control",
+            "title": "Tashqi sifat nazorati",
+            "givenYear": "2023",
+            "expiredYear": ""
+        }
+    ]
 }

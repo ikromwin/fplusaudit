@@ -5,6 +5,7 @@ export default function About({ translations }) {
     const t = translations
 
     const data = t.achievements_data
+    const filteredData = data.filter(item => item.category === t.achievements_category)
     
 
     return (

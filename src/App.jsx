@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useLanguage } from "./context/languageContext";
 import { AnimatePresence, motion } from "framer-motion";
@@ -9,7 +10,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 
 
-// PAGES
+// PAGES -> --> ==> 
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import AboutDetails from "./pages/about/AboutDetails";
@@ -17,6 +18,7 @@ import Services from "./pages/services/Services";
 import NewsList from './pages/news/NewsList';
 import NewsDetails from './pages/news/NewsDetails';
 import Contact from './pages/contact/Contact';
+import Vacancy from './pages/vacancy/Vacancy';
 
 
 
@@ -24,7 +26,6 @@ import Contact from './pages/contact/Contact';
 // ...existing code...
 
 function App() {
-
     const { content, lang } = useLanguage();
     const location = useLocation();
 
@@ -41,7 +42,7 @@ function App() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.2 }}
+                    transition={{ duration: 0.3 }}
                 >
                     <ScrollToTop />
                     <AnimatePresence mode="wait">
@@ -56,7 +57,7 @@ function App() {
                             />
                             <Route
                                 path="/about/:id"
-                                element={<AboutDetails translations={content} />}
+                                element={<AboutDetails translations={content} lang={lang} />}
                             />
                             <Route
                                 path="/services"
@@ -73,6 +74,10 @@ function App() {
                             <Route
                                 path="/contact"
                                 element={<Contact translations={content} />}
+                            />
+                            <Route
+                                path="/vacancy"
+                                element={<Vacancy translations={content} />}
                             />
                         </Routes>
                     </AnimatePresence>

@@ -1,16 +1,29 @@
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Linetitle from "../../components/LineTitleComponent";
 
+import AchievementFullData from "../../i18n/data/achievemenets_full_data.json"
+import AchievementCategory from "../../i18n/data/achievements_category_data.json"
 
-export default function About({ translations }) {
+
+export default function About({ translations, lang }) {
+    const [data, setData] = useState([]);
     const t = translations
+    const { id } = useParams();
 
-    const data = t.achievements_data
-    const filteredData = data.filter(item => item.category === t.achievements_category)
-    
+
+    useEffect(() => {
+        if (id) {
+            const filteredData = AchievementFullData.filter(item => item.categoryId === parseInt(id));
+            setData(filteredData);
+        }
+
+    }, [id]);
+
 
     return (
         <div className="page__aboutDetails maxWidth">
-            <Linetitle title={"About Details"}></Linetitle>
+            <Linetitle title={AchievementCategory[lang][parseInt(id) - 1].title}></Linetitle>
 
             <table>
                 <thead>
@@ -20,22 +33,25 @@ export default function About({ translations }) {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>
-                            <a href="https://cdn.sanity.io/files/dawuw7lx/production/afcd1b043cca8649b4eb71701671e9801fa08684.pdf" target="_blank">
-                                Yuldashev Farhodjon Maxmudjonovich - Ichki auditor sertifikati
-                            </a>
-                        </td>
-                        <td>2024-yildan 2034-yilgacha</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="https://cdn.sanity.io/files/dawuw7lx/production/b4085a5256c911ee02869f96f7acdbfc04e28af6.pdf" target="_blank">
-                                Yuldashev Farhodjon Maxmudjonovich - 2020-yilning eng yaxshi ichki auditor
-                            </a>
-                        </td>
-                        <td>2020</td>
-                    </tr>
+                    {data.length > 0 ?
+                        data.map((item, index) => (
+                            <tr key={index}>
+                                <td>
+                                    <a href={item.file} target="_blank">
+                                        {item.name}
+                                    </a>
+                                </td>
+                                <td>{item.givenYear}{item.expiredYear ? "-" + item.expiredYear : null}</td>
+                            </tr>
+                        ))
+                        :
+                        <tr>
+                            <td>
+                                No data
+                            </td>
+                            <td>-</td>
+                        </tr>
+                    }
                 </tbody>
             </table>
 

@@ -3,9 +3,9 @@ import home_content from "./contents/home_content.json";
 import about_content from "./contents/about_content.json";
 import services_content from "./contents/services_content.json";
 import contact_content from "./contents/contact_content.json";
+import vacancy_content from "./contents/vacancy_content.json";
 
 import news_data from "./data/news_data.json";
-import achievements_data from "./data/achievements_data.json";
 import achievements_category from "./data/achievements_category_data.json";
 
 
@@ -34,13 +34,14 @@ export const i18n = {
             // About page
             about: "About Us",
             about_content: about_content.en_US,
-            achievements_data: achievements_data.en_US,
             achievements_category: achievements_category.en_US,
 
 
             // About Details
             about_table_name: "Names of certificates",
             about_table_years: "Given years",
+            about_table_years_from: "from",
+            about_table_years_to: "to",
 
             // Services page
             services: "Services",
@@ -55,7 +56,8 @@ export const i18n = {
             contact_content: contact_content.en_US,
 
             // Vacancy page
-            vacancy: "Vacancy",
+            vacancy: "Work with us!",
+            vacancy_content: vacancy_content.en_US,
         },
         DATA: {
             news: news_data.en_US
@@ -88,7 +90,8 @@ export const i18n = {
             // About Details
             about_table_name: "Названия сертификатов",
             about_table_years: "Дано лет",
-            achievements_data: achievements_data.ru_RU,
+            about_table_years_from: "с ",
+            about_table_years_to: "по",
             achievements_category: achievements_category.ru_RU,
 
             // Services page
@@ -104,7 +107,8 @@ export const i18n = {
             contact_content: contact_content.ru_RU,
 
             // Vacancy page
-            vacancy: "Вакансии",
+            vacancy: "Работайте с нами!",
+            vacancy_content: vacancy_content.ru_RU,
 
         },
         DATA: {
@@ -139,8 +143,10 @@ export const i18n = {
             // About Details
             about_table_name: "Sertifikat nomlari",
             about_table_years: "Berilgan yili",
-            achievements_data: achievements_data.uz_UZ,
-            achievements_category: achievements_category.uz_UZ,
+            about_table_years_from: "dan",
+            about_table_years_to: "gacha",
+            achievements_category: achievements_category.en_US.certificates,
+
 
             // Services page
             services: "Xizmatlar",
@@ -155,7 +161,8 @@ export const i18n = {
             contact_content: contact_content.uz_UZ,
 
             // Vacancy page
-            vacancy: "Vakansiya",
+            vacancy: "Bizning jamoamizga qo’shiling!",
+            vacancy_content: vacancy_content.uz_UZ,
         },
         DATA: {
             news: news_data.uz_UZ

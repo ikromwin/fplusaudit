@@ -1,80 +1,98 @@
 {
-    "en_US": [
-        {
-            "title": "External quality control",
-            "slug": "external-quality-control"
-        },
-        {
-            "title": "Membership record",
-            "slug": "membership-record"
-        },
-        {
-            "title": "Ranking indicators",
-            "slug": "ranking-indicators"
-        },
-        {
-            "title": "Insurance policies",
-            "slug": "insurance-policies"
-        },
-        {
-            "title": "Quallification certificates",
-            "slug": "qualification-certificates"
-        },
-        {
-            "title": "Other certifications",
-            "slug": "other-certifications"
-        }
-    ],
-    "ru_RU": [
-        {
-            "title": "Внешний контроль качества",
-            "slug": "external-quality-control"
-        },
-        {
-            "title": "Запись о членстве",
-            "slug": "membership-record"
-        },
-        {
-            "title": "Показатели рейтинга",
-            "slug": "ranking-indicators"
-        },
-        {
-            "title": "Страховые полисы",
-            "slug": "insurance-policies"
-        },
-        {
-            "title": "Квалификационные сертификаты",
-            "slug": "qualification-certificates"
-        },
-        {
-            "title": "Другие сертификаты",
-            "slug": "other-certifications"
-        }
-    ],
-    "uz_UZ": [
-        {
-            "title": "Tashqi sifat nazorati",
-            "slug": "external-quality-control"
-        },
-        {
-            "title": "A'zolik guvoxnomasi",
-            "slug": "membership-record"
-        },
-        {
-            "title": "Reyting ko'rsatkichlari",
-            "slug": "ranking-indicators"
-        },
-        {
-            "title": "Sug'urta polislari",
-            "slug": "insurance-policies"
-        },
-        {
-            "title": "Malaka sertifikatlar",
-            "slug": "qualification-certificates"
-        },
-        {
-            "title": "Boshqa sertifikatilar",
-            "slug": "other-certifications"
-        }
-    ]
+  "en_US": [
+    {
+      "id": 1,
+      "title": "External quality control",
+      "slug": "external-quality-control"
+    },
+    {
+      "id": 2,
+      "title": "Membership record",
+      "slug": "membership-record"
+    },
+    {
+      "id": 3,
+      "title": "Ranking indicators",
+      "slug": "ranking-indicators"
+    },
+    {
+      "id": 4,
+      "title": "Insurance policies",
+      "slug": "insurance-policies"
+    },
+    {
+      "id": 5,
+      "title": "Quallification certificates",
+      "slug": "qualification-certificates"
+    },
+    {
+      "id": 6,
+      "title": "Other certifications",
+      "slug": "other-certifications"
+    }
+  ],
+  "ru_RU": [
+    {
+      "id": 1,
+      "title": "Внешний контроль качества",
+      "slug": "external-quality-control"
+    },
+    {
+      "id": 2,
+      "title": "Запись о членстве",
+      "slug": "membership-record"
+    },
+    {
+      "id": 3,
+      "title": "Показатели рейтинга",
+      "slug": "ranking-indicators"
+    },
+    {
+      "id": 4,
+      "title": "Страховые полисы",
+      "slug": "insurance-policies"
+    },
+    {
+      "id": 5,
+      "title": "Квалификационные сертификаты",
+      "slug": "qualification-certificates"
+    },
+    {
+      "id": 6,
+      "title": "Другие сертификаты",
+      "slug": "other-certifications"
+    }
+  ],
+  "uz_UZ": [
+    {
+      "id": 1,
+      "title": "Tashqi sifat nazorati",
+      "slug": "external-quality-control"
+    },
+    {
+      "id": 2,
+      "title": "A'zolik guvoxnomasi",
+      "slug": "membership-record"
+    },
+    {
+      "id": 3,
+      "title": "Reyting ko'rsatkichlari",
+      "slug": "ranking-indicators"
+    },
+    {
+      "id": 4,
+      "title": "Sug'urta polislari",
+      "slug": "insurance-policies"
+    },
+    {
+      "id": 5,
+      "title": "Malaka sertifikatlar",
+      "slug": "qualification-certificates"
+    },
+    {
+      "id": 6,
+      "title": "Boshqa sertifikatilar",
+      "slug": "other-certifications"
+    }
+  ]
 }

@@ -1,3 +1,4 @@
+import ImageGallery from "../../components/ImageGallery";
 import Linetitle from "../../components/LineTitleComponent";
 
 export default function About({ translations }) {
@@ -14,7 +15,7 @@ export default function About({ translations }) {
 
 
       <section className="aboutUs-employee maxWidth">
-        <h1 className="sec-title">Hodimlarimiz</h1>
+        <h1 className="sec-title">{content.employeeTitle}</h1>
         <div className="items">
           {content.employee.map(item =>
             <div className="item" key={item.id}>
@@ -31,6 +32,13 @@ export default function About({ translations }) {
             </div>
           )}
 
+        </div>
+      </section>
+
+      <section className="aboutUs-employee maxWidth">
+        <h1 className="sec-title">{"Jamoaviy Rasmlarimiz"}</h1>
+        <div className="items">
+          <ImageGallery></ImageGallery>
         </div>
       </section>
     </div>

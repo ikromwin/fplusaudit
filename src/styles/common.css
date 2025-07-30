@@ -192,12 +192,102 @@
     font-weight: 500;
     background: none;
     border: none;
+    transition: 0.05s;
 }
 
 .dropdown .dropdown-button.active,
 .dropdown .dropdown-button:hover {
     background: var(--main);
     color: var(--light);
+    transition: 0s;
+}
+
+.responsive-dropdown {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 46px;
+    border-top: 1px solid var(--grey-light);
+    left: 0;
+    display: grid;
+    flex-direction: column;
+    align-items: start;
+    grid-gap: 4rem;
+    gap: 4rem;
+    width: 100%;
+    background: var(--light);
+    padding: 2rem;
+    padding-left: var(--sides-between);
+    padding-right: var(--sides-between);
+    box-shadow: 0 40px 40px #00000010;
+}
+
+.responsive-dropdown .responsive-nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.responsive-dropdown .responsive-nav-links a {
+    position: relative;
+    text-align: start;
+    font-size: 15px;
+    width: 100%;
+    padding: 1rem;
+    color: var(--dark)
+}
+
+.responsive-dropdown .responsive-nav-links a.active {
+    padding-left: 40px;
+    background: #eeeeee50;
+    color: var(--main);
+}
+
+.responsive-dropdown .responsive-nav-links a.active:after {
+    position: absolute;
+    left: 20px;
+    content: "•";
+    font-size: 20px;
+    color: var(--main);
+}
+
+.responsive-dropdown .responsive-achievements-links {
+    display: flex;
+    overflow-x: scroll;
+    padding-left: 0.8rem;
+    width: 100%;
+    gap: 0.8rem;
+}
+
+.responsive-dropdown .responsive-achievements-links a {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    background: var(--grey);
+    white-space: nowrap;
+    border-radius: 10px;
+}
+
+.responsive-dropdown .responsive-achievements-links a.active {
+    background: var(--main);
+    color: var(--light);
+}
+
+.responsive-dropdown .lang-container {
+    width: 100%;
+    background: var(--grey);
+    display: flex;
+    padding-left: 1rem;
+}
+
+.responsive-dropdown .lang-container select {
+    width: 100%;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: transparent;
+    cursor: pointer;
+    padding: 1rem;
+    margin-right: 1rem;
 }
 
 /* 

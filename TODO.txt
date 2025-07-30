@@ -1,7 +1,8 @@
 PAGES:
  - About
- - Vacancy
+ - Vacancy - DONE
 
 FUNCTIONS:
  - tg form
+ - mobile navbar
  - tests

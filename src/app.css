@@ -405,7 +405,10 @@
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    padding: .3rem .5rem;
+    padding: .6rem .8rem;
+    font-size: 14px;
+    color: var(--dark);
+    font-weight: 300;
     border-radius: 8px;
 }
 
@@ -414,7 +417,7 @@
 }
 
 .page__newsDetails .newsDetails-utils .goBack a:active {
-    scale: 0.9;
+    scale: 0.92;
 }
 
 .page__newsDetails .newsDetails-utils .date {

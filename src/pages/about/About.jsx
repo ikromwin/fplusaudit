@@ -1,4 +1,5 @@
 import ImageGallery from "../../components/ImageGallery";
+import ImageTabs from "../../components/ImageTabs";
 import Linetitle from "../../components/LineTitleComponent";
 
 export default function About({ translations }) {
@@ -38,7 +39,7 @@ export default function About({ translations }) {
       <section className="aboutUs-employee maxWidth">
         <h1 className="sec-title">{"Jamoaviy Rasmlarimiz"}</h1>
         <div className="items">
-          <ImageGallery></ImageGallery>
+          <ImageTabs />
         </div>
       </section>
     </div>

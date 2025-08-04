@@ -1,0 +1,68 @@
+{
+    "2022": [
+        {
+            "title": "Mountain View",
+            "src": "/public/data/team_images/T_1.jpg"
+        },
+        {
+            "title": "Forest Trail",
+            "src": "/public/data/team_images/T_2.jpg"
+        },
+        {
+            "title": "Forest Trail",
+            "src": "/public/data/team_images/T_2.jpg"
+        },
+        {
+            "title": "Forest Trail",
+            "src": "/public/data/team_images/T_2.jpg"
+        },
+        {
+            "title": "Mountain View",
+            "src": "/public/data/team_images/T_1.jpg"
+        },
+        {
+            "title": "Forest Trail",
+            "src": "/public/data/team_images/T_2.jpg"
+        },
+        {
+            "title": "Forest Trail",
+            "src": "/public/data/team_images/T_2.jpg"
+        },
+        {
+            "title": "Forest Trail",
+            "src": "/public/data/team_images/T_2.jpg"
+        }
+    ],
+    "2023": [
+        {
+            "title": "Mountain View",
+            "src": "/public/data/team_images/T_1.jpg"
+        },
+        {
+            "title": "Forest Trail",
+            "src": "/public/data/team_images/T_2.jpg"
+        },
+        {
+            "title": "Forest Trail",
+            "src": "/public/data/team_images/T_2.jpg"
+        },
+        {
+            "title": "Forest Trail",
+            "src": "/public/data/team_images/T_2.jpg"
+        },
+        {
+            "title": "Mountain View",
+            "src": "/public/data/team_images/T_1.jpg"
+        }
+    ],
+    "2024": [
+        {
+            "title": "Skyline Night",
+            "src": "/public/data/team_images/T_5.jpg"
+        },
+        {
+            "title": "Downtown Vibes",
+            "src": "/public/data/team_images/T_6.jpg"
+        }
+    ]
+}

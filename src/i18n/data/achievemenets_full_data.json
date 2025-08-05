@@ -2,259 +2,259 @@
     {
         "categoryId": 1,
         "name": "Tashqi sifat nazorati",
-        "file": "/public/data/files/External quality control 1.pdf",
+        "file": "/data/files/External quality control 1.pdf",
         "givenYear": "2023",
         "expiredYear": ""
     },
     {
         "categoryId": 1,
         "name": "Tashqi sifat nazorati",
-        "file": "/public/data/files/External quality control 2.pdf",
+        "file": "/data/files/External quality control 2.pdf",
         "givenYear": "2025",
         "expiredYear": ""
     },
     {
         "categoryId": 2,
         "name": "A'zolik guvoxnomasi - 2023",
-        "file": "/public/data/files/Membership record 1.pdf",
+        "file": "/data/files/Membership record 1.pdf",
         "givenYear": "2023",
         "expiredYear": ""
     },
     {
         "categoryId": 2,
         "name": "A'zolik guvoxnomasi - 2024",
-        "file": "/public/data/files/Membership record 2.pdf",
+        "file": "/data/files/Membership record 2.pdf",
         "givenYear": "2024",
         "expiredYear": ""
     },
     {
         "categoryId": 2,
         "name": "A'zolik guvoxnomasi - 2025",
-        "file": "/public/data/files/Membership record 3.pdf",
+        "file": "/data/files/Membership record 3.pdf",
         "givenYear": "2025",
         "expiredYear": ""
     },
     {
         "categoryId": 3,
         "name": "2022 yil yakuni bo'yicha auditorlik tashkilotlarining RENKING-2023 ko'rsatkichlari",
-        "file": "/public/data/files/Ranking indicators 1.pdf",
+        "file": "/data/files/Ranking indicators 1.pdf",
         "givenYear": "2022",
         "expiredYear": ""
     },
     {
         "categoryId": 3,
         "name": "2023 yil yakuni bo'yicha auditorlik tashkilotlarining RENKING-2024 ko'rsatkichlari",
-        "file": "/public/data/files/Ranking indicators 2.pdf",
+        "file": "/data/files/Ranking indicators 2.pdf",
         "givenYear": "2023",
         "expiredYear": ""
     },
     {
         "categoryId": 3,
         "name": "2024 yil yakuni bo'yicha auditorlik tashkilotlarining RENKING-2025 ko'rsatkichlari",
-        "file": "/public/data/files/Ranking indicators 3.pdf",
+        "file": "/data/files/Ranking indicators 3.pdf",
         "givenYear": "2024",
         "expiredYear": ""
     },
     {
         "categoryId": 4,
         "name": "12,6 milliard sug'urta polisi",
-        "file": "/public/data/files/Insurance policies 1.pdf",
+        "file": "/data/files/Insurance policies 1.pdf",
         "givenYear": "2025",
         "expiredYear": "2026"
     },
     {
         "categoryId": 4,
         "name": "38 milliard sug'urta polisi",
-        "file": "/public/data/files/Insurance policies 2.pdf",
+        "file": "/data/files/Insurance policies 2.pdf",
         "givenYear": "2024",
         "expiredYear": "2025"
     },
     {
         "categoryId": 4,
         "name": "38 milliard sug'urta polisi",
-        "file": "/public/data/files/Insurance policies 3.pdf",
+        "file": "/data/files/Insurance policies 3.pdf",
         "givenYear": "2023",
         "expiredYear": "2024"
     },
     {
         "categoryId": 4,
         "name": "6 milliard sug'urta polisi",
-        "file": "/public/data/files/Insurance policies 4.pdf",
+        "file": "/data/files/Insurance policies 4.pdf",
         "givenYear": "2022",
         "expiredYear": "2023"
     },
     {
         "categoryId": 5,
         "name": "Yuldashev Farhodjon Maxmudjonovich",
-        "file": "/public/data/files/Quallification certificates 1.pdf",
+        "file": "/data/files/Quallification certificates 1.pdf",
         "givenYear": "2019",
         "expiredYear": "2024"
     },
     {
         "categoryId": 5,
         "name": "Abdullayev Mansurjon Xusnimuxammad o'g'li",
-        "file": "/public/data/files/Quallification certificates 2.pdf",
+        "file": "/data/files/Quallification certificates 2.pdf",
         "givenYear": "2020",
         "expiredYear": "2025"
     },
     {
         "categoryId": 5,
         "name": "Abdullayev Rustamjon Axmadjonovich",
-        "file": "/public/data/files/Quallification certificates 3.pdf",
+        "file": "/data/files/Quallification certificates 3.pdf",
         "givenYear": "2023",
         "expiredYear": "2028"
     },
     {
         "categoryId": 5,
         "name": "Davlyanova Sayxa Umid qizi",
-        "file": "/public/data/files/Quallification certificates 4.pdf",
+        "file": "/data/files/Quallification certificates 4.pdf",
         "givenYear": "2024",
         "expiredYear": "2029"
     },
     {
         "categoryId": 5,
         "name": "Maxkamov Farxodjon Fazliddinovich",
-        "file": "/public/data/files/Quallification certificates 5.pdf",
+        "file": "/data/files/Quallification certificates 5.pdf",
         "givenYear": "2022",
         "expiredYear": "2027"
     },
     {
         "categoryId": 5,
         "name": "Mirjamolova Nozima Miragzamovna",
-        "file": "/public/data/files/Quallification certificates 6.pdf",
+        "file": "/data/files/Quallification certificates 6.pdf",
         "givenYear": "2022",
         "expiredYear": "2027"
     },
     {
         "categoryId": 5,
         "name": "Mirzayev Voxid Sadikjanovich",
-        "file": "/public/data/files/Quallification certificates 7.pdf",
+        "file": "/data/files/Quallification certificates 7.pdf",
         "givenYear": "2024",
         "expiredYear": "2029"
     },
     {
         "categoryId": 5,
         "name": "Nurmuxammadov Islomjon Xusnimuxammad o'g'li",
-        "file": "/public/data/files/Quallification certificates 8.pdf",
+        "file": "/data/files/Quallification certificates 8.pdf",
         "givenYear": "2024",
         "expiredYear": "2029"
     },
     {
         "categoryId": 5,
         "name": "Umarov Sanjar Shavkatovich",
-        "file": "/public/data/files/Quallification certificates 9.pdf",
+        "file": "/data/files/Quallification certificates 9.pdf",
         "givenYear": "2023",
         "expiredYear": "2028"
     },
     {
         "categoryId": 5,
         "name": "Yuldashev Farxodjon Maxmudjonovich",
-        "file": "/public/data/files/Quallification certificates 10.pdf",
+        "file": "/data/files/Quallification certificates 10.pdf",
         "givenYear": "2024",
         "expiredYear": "2034"
     },
     {
         "categoryId": 5,
         "name": "Yuldashev Rovshan O'sarovich",
-        "file": "/public/data/files/Quallification certificates 11.pdf",
+        "file": "/data/files/Quallification certificates 11.pdf",
         "givenYear": "2022",
         "expiredYear": "2027"
     },
     {
         "categoryId": 5,
         "name": "Yuldasheva Xayitxon Zokir qizi",
-        "file": "/public/data/files/Quallification certificates 12.pdf",
+        "file": "/data/files/Quallification certificates 12.pdf",
         "givenYear": "2022",
         "expiredYear": "2027"
     },
     {
         "categoryId": 5,
         "name": "Karabayeva Olga Shuxratjonovna",
-        "file": "/public/data/files/Quallification certificates 13.pdf",
+        "file": "/data/files/Quallification certificates 13.pdf",
         "givenYear": "2025",
         "expiredYear": "2030"
     },
     {
         "categoryId": 6,
         "name": "Yuldashev Farhodjon Maxmudjonovich - Ichki auditor sertifikati",
-        "file": "/public/data/files/Other certifications 1.pdf",
+        "file": "/data/files/Other certifications 1.pdf",
         "givenYear": "2024",
         "expiredYear": "2034"
     },
     {
         "categoryId": 6,
         "name": "Yuldashev Farhodjon Maxmudjonovich - 2020-yilning eng yaxshi ichki auditor",
-        "file": "/public/data/files/Other certifications 2.pdf",
+        "file": "/data/files/Other certifications 2.pdf",
         "givenYear": "2020",
         "expiredYear": ""
     },
     {
         "categoryId": 6,
         "name": "Shek Yevgeniy Yurevich - Korporativ boshqaruvchining malaka attestati",
-        "file": "/public/data/files/Other certifications 3.pdf",
+        "file": "/data/files/Other certifications 3.pdf",
         "givenYear": "2022",
         "expiredYear": "2027"
     },
     {
         "categoryId": 6,
         "name": "Yuldashev Farhodjon Maxmudjonovich - O'zbekiston soliq maslahatchilari palatasi",
-        "file": "/public/data/files/Other certifications 4.pdf",
+        "file": "/data/files/Other certifications 4.pdf",
         "givenYear": "2023",
         "expiredYear": "2024"
     },
     {
         "categoryId": 6,
         "name": "Xolmatova Feruza Xamidjon qizi - Korporativ boshqaruvchining malaka attestati",
-        "file": "/public/data/files/Other certifications 5.pdf",
+        "file": "/data/files/Other certifications 5.pdf",
         "givenYear": "2021",
         "expiredYear": "2026"
     },
     {
         "categoryId": 6,
         "name": "Yuldashev Farhodjon Maxmudjonovich - 2021-yilning eng yaxshi ichki auditori",
-        "file": "/public/data/files/Other certifications 6.pdf",
+        "file": "/data/files/Other certifications 6.pdf",
         "givenYear": "2021",
         "expiredYear": ""
     },
     {
         "categoryId": 6,
         "name": "Yuldashev Farhodjon Maxmudjonovich - Xalqaro audit standartlari IAPBE sertifikati",
-        "file": "/public/data/files/Other certifications 7.pdf",
+        "file": "/data/files/Other certifications 7.pdf",
         "givenYear": "2022",
         "expiredYear": ""
     },
     {
         "categoryId": 6,
         "name": "Abdullayev Mansurjon Xusnimuxammad o'gli - CAP",
-        "file": "/public/data/files/Other certifications 8.pdf",
+        "file": "/data/files/Other certifications 8.pdf",
         "givenYear": "2015",
         "expiredYear": ""
     },
     {
         "categoryId": 6,
         "name": "Abdullayev Mansurjon Xusnimuxammad o'gli - Moliyaviy hisobotning xalqaro standartlari sertifikati | IFRS academy",
-        "file": "/public/data/files/Other certifications 9.pdf",
+        "file": "/data/files/Other certifications 9.pdf",
         "givenYear": "2020",
         "expiredYear": ""
     },
     {
         "categoryId": 6,
         "name": "Yuldashev Farhodjon Maxmudjonovich - IAPBE DipAFR Advanced Financial Reporting",
-        "file": "/public/data/files/Other certifications 10.pdf",
+        "file": "/data/files/Other certifications 10.pdf",
         "givenYear": "2021",
         "expiredYear": ""
     },
     {
         "categoryId": 6,
         "name": "The Association of Chartered certified Accountant - (ACCA)",
-        "file": "/public/data/files/Other certifications 11.pdf",
+        "file": "/data/files/Other certifications 11.pdf",
         "givenYear": "2022",
         "expiredYear": ""
     },
     {
         "categoryId": 6,
         "name": "Maxkamov Farxodjon Fazliddinovich - 2023-yilning eng yaxshi ichki auditori",
-        "file": "/public/data/files/Other certifications 12.pdf",
+        "file": "/data/files/Other certifications 12.pdf",
         "givenYear": "2023",
         "expiredYear": ""
     }

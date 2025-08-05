@@ -34,6 +34,7 @@ export const i18n = {
             // About page
             about: "About Us",
             about_content: about_content.en_US,
+            achievements_title: "Achievements",
             achievements_category: achievements_category.en_US,
 
 
@@ -92,6 +93,7 @@ export const i18n = {
             about_table_years: "Дано лет",
             about_table_years_from: "с ",
             about_table_years_to: "по",
+            achievements_title: "Достижения",
             achievements_category: achievements_category.ru_RU,
 
             // Services page
@@ -145,6 +147,7 @@ export const i18n = {
             about_table_years: "Berilgan yili",
             about_table_years_from: "dan",
             about_table_years_to: "gacha",
+            achievements_title: "Yutuqlarimiz",
             achievements_category: achievements_category.en_US.certificates,
 
 

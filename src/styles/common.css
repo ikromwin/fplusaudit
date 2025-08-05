@@ -205,6 +205,8 @@
 .responsive-dropdown {
     position: absolute;
     left: 0;
+    height: calc(100vh - 46px);
+    overflow: auto;
     width: 100%;
     top: 46px;
     border-top: 1px solid var(--grey-light);
@@ -216,6 +218,7 @@
     gap: 4rem;
     width: 100%;
     background: var(--light);
+
     padding: 2rem;
     padding-left: var(--sides-between);
     padding-right: var(--sides-between);
@@ -250,10 +253,23 @@
     color: var(--main);
 }
 
-.responsive-dropdown .responsive-achievements-links {
+.responsive-dropdown .responsive-achievements-links{
+    width: 100%;
+    display: grid;
+    border: 1px dashed var(--grey);
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+.responsive-dropdown .responsive-achievements-links .title{
+    margin-bottom: 15px;
+    padding-left: 0.5rem;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.responsive-dropdown .responsive-achievements-links .responsive-achievements {
     display: flex;
     overflow-x: scroll;
-    padding-left: 0.8rem;
     width: 100%;
     gap: 0.8rem;
 }
@@ -346,7 +362,6 @@
     text-transform: uppercase;
     font-size: 14px;
 }
-
 
 
 

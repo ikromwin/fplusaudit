@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { motion } from 'framer-motion';
 import { useLanguage } from "../context/languageContext"
 import BlackLogo from "../assets/logo-black.svg";
 
@@ -26,6 +27,8 @@ export default function Navbar() {
         { to: "/contact", label: content.contact }
     ]
 
+
+
     return (
         <nav className="navbar">
             <div className="container">
@@ -40,6 +43,7 @@ export default function Navbar() {
 
 
                 <div className="nav-container">
+
                     <div className="nav-links buttons-menu">
                         {
                             link.map((item, index) => (
@@ -109,7 +113,6 @@ export default function Navbar() {
                             }
                         </div>
                     </div>
-
                     {
                         isOpen && (
                             <div className="responsive-dropdown">
@@ -125,18 +128,20 @@ export default function Navbar() {
                                 </div>
 
                                 <div className="responsive-achievements-links">
-                                    {AchievementCategory[lang].map((dropItem, dropIndex) => (
-                                        <NavLink
-                                            key={dropIndex}
-                                            to={`/about/${dropItem.id}`}
-                                            onClick={() => setIsOpen(false)}
-                                            className={({ isActive }) =>
-                                                isActive ? "responsive-dropdown-button active" : "responsive-dropdown-button"
-                                            }
-                                        >
-                                            {dropItem.title}
-                                        </NavLink>
-                                    ))}
+                                    <h1 className="title">{content.achievements_title}</h1>
+                                    <div className="responsive-achievements">
+                                        {AchievementCategory[lang].map((dropItem, dropIndex) => (
+                                            <NavLink
+                                                key={dropIndex}
+                                                to={`/about/${dropItem.id}`} onClick={() => setIsOpen(!isOpen)}
+                                                className={({ isActive }) =>
+                                                    isActive ? "responsive-dropdown-button active" : "responsive-dropdown-button"
+                                                }
+                                            >
+                                                {dropItem.title}
+                                            </NavLink>
+                                        ))}
+                                    </div>
                                 </div>
 
                                 <div className="lang-container">
@@ -160,7 +165,6 @@ export default function Navbar() {
                             </div>
                         )
                     }
-
                 </div>
             </div>
         </nav>

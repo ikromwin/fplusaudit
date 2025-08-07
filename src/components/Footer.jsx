@@ -2,7 +2,7 @@ import WhiteLogo from '../assets/logo-white.svg';
 import Email from '../assets/email.svg';
 import Phone from '../assets/phone.svg';
 import Telegram from '../assets/TG.svg';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 export default function Footer({ translations }) {

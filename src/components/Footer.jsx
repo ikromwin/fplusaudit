@@ -26,13 +26,13 @@ export default function Footer({ translations }) {
                         <p dangerouslySetInnerHTML={{ __html: t.footerAddress }}></p>
 
                         <div className='socials'>
-                            <a href="tell://78 555 00 70">
+                            <a href="tel:+998785550070">
                                 <Phone size={18}/>
                             </a>
                             <a href="mailto:info@f-plusaudit.uz">
                                 <Mail size={18}/>
                             </a>
-                            <a href="https://t.me/fplusaudit" target="_blank">
+                            <a href="https://t.me/fplusaudit" target="_blank" rel="noopener noreferrer">
                                 <SendHorizontal size={18}/>
                             </a>
                         </div>

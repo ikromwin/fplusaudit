@@ -1,4 +1,3 @@
-import ImageGallery from "../../components/ImageGallery";
 import ImageTabs from "../../components/ImageTabs";
 import Linetitle from "../../components/LineTitleComponent";
 

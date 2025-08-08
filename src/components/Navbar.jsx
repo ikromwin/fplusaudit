@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { motion } from 'framer-motion';
+import { NavLink } from "react-router-dom";
 import { useLanguage } from "../context/languageContext"
 import BlackLogo from "../assets/logo-black.svg";
 

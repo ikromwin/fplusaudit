@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import Banner from "../../assets/banner.png";
+import Banner from "../../assets/Banner.png";
 import ErrorContent from "../../components/ErrorContent.jsx";
 import Thumbnail from "../../assets/thumbnail.jpg";
 import Video from "../../assets/video.mp4";

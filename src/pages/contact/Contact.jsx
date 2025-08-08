@@ -5,6 +5,7 @@ import Linetitle from "../../components/LineTitleComponent";
 import EmailForm from "../../assets/Email form.svg"
 import PhoneForm from "../../assets/Phone form.svg"
 import UserForm from "../../assets/User.svg"
+import { Mail, Phone, User } from "lucide-react";
 
 
 export default function Contact({ translations }) {
@@ -99,7 +100,7 @@ export default function Contact({ translations }) {
                     />
 
                     <div className="form-icon">
-                        <img src={UserForm} alt="User Icon" width={20} />
+                        <User color="white" size={20} />
                     </div>
                 </div>
 
@@ -114,7 +115,7 @@ export default function Contact({ translations }) {
                     />
 
                     <div className="form-icon">
-                        <img src={EmailForm} alt="Email Icon" width={20} />
+                        <Mail color="#ffffff" size={20} />
                     </div>
                 </div>
 
@@ -128,7 +129,7 @@ export default function Contact({ translations }) {
                     />
 
                     <div className="form-icon">
-                        <img src={PhoneForm} alt="Phone Icon" width={20} />
+                        <Phone size={20} color="#ffffff" />
                     </div>
                 </div>
 

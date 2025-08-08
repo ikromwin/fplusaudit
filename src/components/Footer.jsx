@@ -1,7 +1,5 @@
+import { Mail, Phone, SendHorizontal } from 'lucide-react';
 import WhiteLogo from '../assets/logo-white.svg';
-import Email from '../assets/email.svg';
-import Phone from '../assets/phone.svg';
-import Telegram from '../assets/TG.svg';
 import { NavLink } from 'react-router-dom';
 
 
@@ -29,13 +27,13 @@ export default function Footer({ translations }) {
 
                         <div className='socials'>
                             <a href="tell://78 555 00 70">
-                                <img src={Phone} alt="Phone Call to Contact." />
+                                <Phone size={18}/>
                             </a>
                             <a href="mailto:info@f-plusaudit.uz">
-                                <img src={Email} alt="Mail to Contact." />
+                                <Mail size={18}/>
                             </a>
                             <a href="https://t.me/fplusaudit" target="_blank">
-                                <img src={Telegram} alt="Telegram chanell to show up-to-date posts, blogs, and news." />
+                                <SendHorizontal size={18}/>
                             </a>
                         </div>
                     </li>

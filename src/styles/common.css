@@ -461,7 +461,6 @@
     top: 0;
     content: "";
     background: #ffffff22;
-    backdrop-filter: blur(4px);
     width: 100%;
     height: 100%;
     border-radius: 50%;

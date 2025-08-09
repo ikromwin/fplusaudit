@@ -1,7 +1,5 @@
 import Linetitle from "../../components/LineTitleComponent";
 
-import ErrorContent from "../../components/ErrorContent"
-
 export default function Services({ translations }) {
     const t = translations
     const content = t.services_content || {}
@@ -9,10 +7,10 @@ export default function Services({ translations }) {
 
     return (
         <div className="page__services maxWidth">
-            <Linetitle title={content.LineTitle || ErrorContent}></Linetitle>
+            <Linetitle title={content.LineTitle || null}></Linetitle>
             
 
-            <h2 className="subtitle">{content.subTitle || ErrorContent}</h2>
+            <h2 className="subtitle">{content.subTitle || null}</h2>
 
 
             <div className="items">

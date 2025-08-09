@@ -10,7 +10,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 
 
-// PAGES -> --> ==> 
+// PAGES
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import AboutDetails from "./pages/about/AboutDetails";

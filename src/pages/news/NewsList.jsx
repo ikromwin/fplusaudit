@@ -1,7 +1,5 @@
 import { useLanguage } from "../../context/languageContext.jsx";
 import Linetitle from "../../components/LineTitleComponent";
-
-import ErrorContent from "../../components/ErrorContent"
 import NewsCard from "../../components/NewsCard.jsx";
 
 export default function NewsList({ translations }) {
@@ -11,7 +9,7 @@ export default function NewsList({ translations }) {
 
     return (
         <div className="page__news maxWidth">
-            <Linetitle title={t.news || ErrorContent}></Linetitle>
+            <Linetitle title={t.news || null}></Linetitle>
 
             <div className="news-component">
                 <div className="items">
@@ -23,7 +21,7 @@ export default function NewsList({ translations }) {
                             date={newsItem.date || "No date available"}
                             href={`/news/${newsItem.id}`}
                         />
-                    )) : <ErrorContent />}
+                    )) : <null />}
                 </div>
             </div>
 

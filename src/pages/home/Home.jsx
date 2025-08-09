@@ -1,16 +1,30 @@
 import { useRef, useState, useEffect } from "react";
-import Banner from "../../assets/Banner.png";
-import ErrorContent from "../../components/ErrorContent.jsx";
-import Thumbnail from "../../assets/thumbnail.jpg";
-import Video from "../../assets/video.mp4";
+
+
+
+// CONTEXT
 import { useLanguage } from "../../context/languageContext.jsx";
+
+
+// THIDR PARTY
 import CountUp from 'react-countup';
 
 
-import Dove from "../../assets/Dove.png";
-import Scales from "../../assets/Scales.png";
-import Security from "../../assets/Security.png";
-import Learning from "../../assets/Learning.png";
+
+// IMAGE IMPORTS
+import Thumbnail from "../../assets/thumbnail.jpg";
+import Banner from "../../assets/Banner.png";
+// ======= PRINCIPLES ICONS (4) =======
+import Dove from "../../assets/principles/Dove.png";
+import Scales from "../../assets/principles/Scales.png";
+import Security from "../../assets/principles/Security.png";
+import Learning from "../../assets/principles/Learning.png";
+// ======= MP4 =======
+import Video from "../../assets/video.mp4";
+
+
+
+
 
 import P1 from "../../assets/partners/p1.png";
 import P2 from "../../assets/partners/p2.png";
@@ -48,6 +62,7 @@ function shuffleArray(array) {
   }
   return arr;
 }
+
 
 export default function Home({ translations }) {
   const { data } = useLanguage();
@@ -96,7 +111,7 @@ export default function Home({ translations }) {
     <main>
       <div className="hero">
         <div className="maxWidth">
-          <h1 className="hero-text">{content.heroText || <ErrorContent />}</h1>
+          <h1 className="hero-text">{content.heroText || null}</h1>
         </div>
         <div className="hero-image">
           <img src={Banner} alt="Home Page Hero Banner | Signle" />
@@ -114,10 +129,10 @@ export default function Home({ translations }) {
           {content.heroAbout ? content.heroAbout?.map((item, index) => (
             <div className="item" key={index}>
               <h2>{item.title}</h2>
-              
+
               <p><CountUp key={index} end={parseInt(item.num)} duration={2} /></p>
             </div>
-          )) : <ErrorContent />}
+          )) : null}
         </div>
       </div>
 
@@ -129,10 +144,10 @@ export default function Home({ translations }) {
         ================================================
       */}
       <section className="home-about maxWidth">
-        <h2 className="sec-title">{content.aboutTitle || <ErrorContent />}</h2>
+        <h2 className="sec-title">{content.aboutTitle || null}</h2>
         <div className="block">
           <div className="hero-about-text">
-            {content.aboutText ? <p dangerouslySetInnerHTML={{ __html: content.aboutText }} /> : <ErrorContent />}
+            {content.aboutText ? <p dangerouslySetInnerHTML={{ __html: content.aboutText }} /> : null}
           </div>
           <div className="hero-about-video">
             <div className="play" onClick={handlePlayClick} style={{ cursor: "pointer" }}>
@@ -208,32 +223,32 @@ export default function Home({ translations }) {
       */}
 
       <section className="home-principles">
-        <h2 className="sec-title maxWidth">{content.companyTitle || <ErrorContent />}</h2>
+        <h2 className="sec-title maxWidth">{content.companyTitle || null}</h2>
         <div className="block">
           <div className="maxWidth">
             <ul>
               <li>
                 <div className="list">
-                  <img alt={content.companyPrinciples[0] || <ErrorContent />} src={Dove} />
+                  <img alt={content.companyPrinciples[0] || null} src={Dove} />
                 </div>
-                <p className="principles-txt">{content.companyPrinciples[0] || <ErrorContent />}</p>
+                <p className="principles-txt">{content.companyPrinciples[0] || null}</p>
               </li>
               <li>
                 <div className="list">
-                  <img alt={content.companyPrinciples[1] || <ErrorContent />} src={Scales} />
-                </div><p className="principles-txt">{content.companyPrinciples[1] || <ErrorContent />}</p>
+                  <img alt={content.companyPrinciples[1] || null} src={Scales} />
+                </div><p className="principles-txt">{content.companyPrinciples[1] || null}</p>
               </li>
               <li>
                 <div className="list">
-                  <img alt={content.companyPrinciples[2] || <ErrorContent />} src={Learning} />
+                  <img alt={content.companyPrinciples[2] || null} src={Learning} />
                 </div>
-                <p className="principles-txt">{content.companyPrinciples[2] || <ErrorContent />}</p>
+                <p className="principles-txt">{content.companyPrinciples[2] || null}</p>
               </li>
               <li>
                 <div className="list">
-                  <img alt={content.companyPrinciples[3] || <ErrorContent />} src={Security} />
+                  <img alt={content.companyPrinciples[3] || null} src={Security} />
                 </div>
-                <p className="principles-txt">{content.companyPrinciples[3] || <ErrorContent />}</p>
+                <p className="principles-txt">{content.companyPrinciples[3] || null}</p>
               </li>
             </ul>
           </div>
@@ -247,7 +262,7 @@ export default function Home({ translations }) {
         ================================================
       */}
       <section className="home-partners">
-        <h2 className="sec-title maxWidth">{content.partnerTitle || <ErrorContent />}</h2>
+        <h2 className="sec-title maxWidth">{content.partnerTitle || null}</h2>
         <div className="block maxWidth">
           <div className="slider">
             <div className="slider-track">
@@ -278,7 +293,7 @@ export default function Home({ translations }) {
         ================================================
       */}
       <section className="news maxWidth">
-        <h2 className="sec-title maxWidth">{content.newsTitle || <ErrorContent />}</h2>
+        <h2 className="sec-title maxWidth">{content.newsTitle || null}</h2>
 
         <div className="news-component">
           <div className="items">
@@ -290,7 +305,7 @@ export default function Home({ translations }) {
                 date={newsItem.date || "No date available"}
                 href={`/news/${newsItem.id}`}
               />
-            )) : <ErrorContent />}
+            )) : null}
           </div>
         </div>
 

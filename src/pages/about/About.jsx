@@ -1,6 +1,10 @@
 import ImageTabs from "../../components/ImageTabs";
 import Linetitle from "../../components/LineTitleComponent";
 
+
+const achienvementsData = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
 export default function About({ translations }) {
   const t = translations
   const content = t.about_content
@@ -36,11 +40,27 @@ export default function About({ translations }) {
       </section>
 
       <section className="aboutUs-employee maxWidth">
-        <h1 className="sec-title">{"Jamoaviy Rasmlarimiz"}</h1>
+        <h1 className="sec-title">{t.teamImages}</h1>
         <div className="items">
           <ImageTabs />
         </div>
       </section>
+
+      <section className="about-images">
+        <h2 className="sec-title maxWidth">{t.achienvementsImages}</h2>
+        <div className="block maxWidth">
+          <div className="slider">
+            <div className="slider-track">
+              {achienvementsData.map((_, index) => (
+                <div className="item" key={index}>
+                  <img src={`public/data/achievements/ACHIVEMENTS_${index + 1}.jpg`} alt={`Partner ${index + 1}`} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

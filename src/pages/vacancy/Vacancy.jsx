@@ -12,8 +12,7 @@ export default function Vacancy({ translations }) {
 
             <ul className="vacancy-content" dangerouslySetInnerHTML={{ __html: content.subTitle }} />
 
-
-
+            
             <section className="vacancy-employee maxWidth">
                 <h1 className="sec-title">{content.itemsTitle}</h1>
                 <div className="items">

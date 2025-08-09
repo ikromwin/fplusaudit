@@ -1,11 +1,9 @@
 import { useState } from "react";
-
-import Linetitle from "../../components/LineTitleComponent";
-
-import EmailForm from "../../assets/Email form.svg"
-import PhoneForm from "../../assets/Phone form.svg"
-import UserForm from "../../assets/User.svg"
 import { Mail, Phone, User } from "lucide-react";
+
+
+// COMPONENTS
+import Linetitle from "../../components/LineTitleComponent";
 
 
 export default function Contact({ translations }) {
@@ -17,9 +15,8 @@ export default function Contact({ translations }) {
     });
     const [status, setStatus] = useState(false);
 
-    const TELEGRAM_BOT_TOKEN = "7463275144:AAFZD2hgf3K_B1yHdKPBXH7InDrdmKb378A"; // replace with your token
-    const TELEGRAM_CHAT_ID = "7614065503"; // replace with your group/chat ID
-
+    const TELEGRAM_BOT_TOKEN = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
+    const TELEGRAM_CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID;
 
 
 
@@ -81,6 +78,8 @@ export default function Contact({ translations }) {
     return (
         <div className="page__contact maxWidth">
             <Linetitle title={content.LineTitle}></Linetitle>
+
+
 
             <div className="info-text">
                 <p className="info">{content.info}</p>

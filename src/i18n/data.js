@@ -34,6 +34,8 @@ export const i18n = {
             // About page
             about: "About Us",
             about_content: about_content.en_US,
+            teamImages: "Team Photos",
+            achienvementsImages: "Achienvements",
             achievements_title: "Achievements",
             achievements_category: achievements_category.en_US,
 
@@ -87,6 +89,8 @@ export const i18n = {
             // About page
             about: "О нас",
             about_content: about_content.ru_RU,
+            teamImages: "Фотографии команды",
+            achienvementsImages: "Достижения",
 
             // About Details
             about_table_name: "Названия сертификатов",
@@ -141,6 +145,8 @@ export const i18n = {
             // About page
             about: "Biz haqimizda",
             about_content: about_content.uz_UZ,
+            teamImages: "Jamoaviy rasmlar",
+            achienvementsImages: "Yutuqlarimiz",
 
             // About Details
             about_table_name: "Sertifikat nomlari",

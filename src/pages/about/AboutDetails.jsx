@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Linetitle from "../../components/LineTitleComponent";
 
 import AchievementFullData from "../../i18n/data/achievemenets_full_data.json"
 import AchievementCategory from "../../i18n/data/achievements_category_data.json"

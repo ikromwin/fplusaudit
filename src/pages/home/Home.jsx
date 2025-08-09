@@ -1,11 +1,8 @@
 import { useRef, useState, useEffect } from "react";
 import Banner from "../../assets/Banner.png";
-import ErrorContent from "../../components/ErrorContent.jsx";
 import Thumbnail from "../../assets/thumbnail.jpg";
 import Video from "../../assets/video.mp4";
 import { useLanguage } from "../../context/languageContext.jsx";
-import CountUp from 'react-countup';
-
 
 import Dove from "../../assets/Dove.png";
 import Scales from "../../assets/Scales.png";
@@ -36,7 +33,6 @@ import P21 from "../../assets/partners/p21.png";
 import P22 from "../../assets/partners/p22.png";
 import P23 from "../../assets/partners/p23.png";
 import P24 from "../../assets/partners/p24.png";
-import NewsCard from "../../components/NewsCard.jsx";
 
 const PARTNER_LOGOS = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, P17, P18, P19, P20, P21, P22, P23, P24];
 

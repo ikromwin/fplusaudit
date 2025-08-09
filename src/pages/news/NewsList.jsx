@@ -1,8 +1,7 @@
 import { useLanguage } from "../../context/languageContext.jsx";
-import Linetitle from "../../components/LineTitleComponent";
 
-import ErrorContent from "../../components/ErrorContent"
-import NewsCard from "../../components/NewsCard.jsx";
+import ErrorContent from "../../components/ErrorContent";
+import Thumbnail from "../../assets/thumbnail.jpg";
 
 export default function NewsList({ translations }) {
     const t = translations

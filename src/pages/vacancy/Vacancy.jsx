@@ -1,4 +1,3 @@
-import Linetitle from "../../components/LineTitleComponent";
 
 export default function Vacancy({ translations }) {
     const t = translations
@@ -18,8 +17,8 @@ export default function Vacancy({ translations }) {
                 <h1 className="sec-title">{content.itemsTitle}</h1>
                 <div className="items">
                     {content.items.map(item =>
-                        <div className="item">
-                            <h1 key={item.id}>
+                        <div className="item" key={item.id}>
+                            <h1>
                                 {item.title}
                             </h1>
                             <p>{item.description}</p>

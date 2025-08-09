@@ -1,18 +1,13 @@
-import ImageTabs from "../../components/ImageTabs";
-import Linetitle from "../../components/LineTitleComponent";
 
 export default function About({ translations }) {
   const t = translations
   const content = t.about_content
-
 
   return (
     <div className="page__aboutUs maxWidth">
       <Linetitle title={t.about}></Linetitle>
 
       <p className="aboutUs-content" dangerouslySetInnerHTML={{ __html: content.aboutContent }} />
-
-
 
       <section className="aboutUs-employee maxWidth">
         <h1 className="sec-title">{content.employeeTitle}</h1>

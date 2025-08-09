@@ -1,5 +1,3 @@
-import { CalendarDays } from "lucide-react";
-import { Link } from "react-router-dom";
 
 function NewsCard({ imgSrc, title, date, href }) {
     return (

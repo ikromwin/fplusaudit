@@ -1,11 +1,6 @@
 import { useState } from "react";
 
-import Linetitle from "../../components/LineTitleComponent";
 
-import EmailForm from "../../assets/Email form.svg"
-import PhoneForm from "../../assets/Phone form.svg"
-import UserForm from "../../assets/User.svg"
-import { Mail, Phone, User } from "lucide-react";
 
 
 export default function Contact({ translations }) {

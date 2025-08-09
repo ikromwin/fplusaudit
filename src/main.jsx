@@ -1,8 +1,4 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import { BrowserRouter } from "react-router-dom";
-import { LanguageProvider } from "./context/languageContext";
 
 // STYLES
 import './app.css';
@@ -13,11 +9,11 @@ import "./styles/ImageTabs.css";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <StrictMode>
     <BrowserRouter>
       <LanguageProvider>
         <App />
       </LanguageProvider>
     </BrowserRouter>
-  </React.StrictMode>
+  </StrictMode>
 );

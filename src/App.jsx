@@ -1,29 +1,10 @@
-import { useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useLanguage } from "./context/languageContext";
-import { AnimatePresence, motion } from "framer-motion";
 
 // COMPONENTS
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
 
+// PAGES -> --> ==>
 
-
-// PAGES -> --> ==> 
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
-import AboutDetails from "./pages/about/AboutDetails";
-import Services from "./pages/services/Services";
-import NewsList from './pages/news/NewsList';
-import NewsDetails from './pages/news/NewsDetails';
-import Contact from './pages/contact/Contact';
-import Vacancy from './pages/vacancy/Vacancy';
-
-
-
-
-// ...existing code...
 
 function App() {
     const { content, lang } = useLanguage();

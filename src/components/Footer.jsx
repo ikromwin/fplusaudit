@@ -1,6 +1,4 @@
-import { Mail, Phone, SendHorizontal } from 'lucide-react';
 import WhiteLogo from '../assets/logo-white.svg';
-import { NavLink } from 'react-router-dom';
 
 
 export default function Footer({ translations }) {

@@ -53,7 +53,7 @@ export default function About({ translations }) {
             <div className="slider-track">
               {achienvementsData.map((_, index) => (
                 <div className="item" key={index}>
-                  <img src={`public/data/achievements/ACHIVEMENTS_${index + 1}.jpg`} alt={`Partner ${index + 1}`} />
+                  <img src={`/data/achievements/ACHIVEMENTS_${index + 1}.jpg`} alt={`Partner ${index + 1}`} />
                 </div>
               ))}
             </div>

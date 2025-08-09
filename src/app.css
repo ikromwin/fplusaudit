@@ -776,9 +776,7 @@ table th {
 
 /*  */
 
-.about-images{
-
-}
+.about-images {}
 
 .about-images .items {
     display: flex;
@@ -826,7 +824,7 @@ table th {
 .about-images .slider-track {
     display: flex;
     width: calc(180px * 22);
-    animation: scroll-logos 60s linear infinite;
+    animation: scroll-logos 40s linear infinite;
     will-change: transform;
 }
 
@@ -839,7 +837,7 @@ table th {
 }
 
 .about-images .slider .item {
-    flex: 0 0 180px;
+    flex: 0 0 220px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -848,9 +846,10 @@ table th {
 
 .about-images .slider .item img {
     max-width: auto;
-    height: 300px;
+    height: 220px;
     user-select: none;
     -webkit-user-drag: none;
+    border-radius: 10px;
 }
 
 @keyframes scroll-logos {

@@ -37,7 +37,7 @@ export default function About({ translations, lang }) {
                         data.map((item, index) => (
                             <tr key={index}>
                                 <td>
-                                    <a href={item.file} target="_blank">
+                                    <a href={item.file} target="_blank" rel="noreferrer">
                                         {item.name}
                                     </a>
                                 </td>

@@ -4,7 +4,7 @@ import ErrorContent from "../../components/ErrorContent.jsx";
 import Thumbnail from "../../assets/thumbnail.jpg";
 import Video from "../../assets/video.mp4";
 import { useLanguage } from "../../context/languageContext.jsx";
-
+import CountUp from 'react-countup';
 
 
 import Dove from "../../assets/Dove.png";
@@ -114,7 +114,8 @@ export default function Home({ translations }) {
           {content.heroAbout ? content.heroAbout?.map((item, index) => (
             <div className="item" key={index}>
               <h2>{item.title}</h2>
-              <p>{item.num}</p>
+              
+              <p><CountUp key={index} end={parseInt(item.num)} duration={2} /></p>
             </div>
           )) : <ErrorContent />}
         </div>

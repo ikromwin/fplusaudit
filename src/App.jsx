@@ -19,6 +19,7 @@ import NewsList from './pages/news/NewsList';
 import NewsDetails from './pages/news/NewsDetails';
 import Contact from './pages/contact/Contact';
 import Vacancy from './pages/vacancy/Vacancy';
+import GalleryPage from "./pages/gallery/GalleryPage";
 
 
 
@@ -58,6 +59,10 @@ function App() {
                             <Route
                                 path="/about/:id"
                                 element={<AboutDetails translations={content} lang={lang} />}
+                            />
+                            <Route
+                                path="/about/gallery"
+                                element={<GalleryPage translations={content} />}
                             />
                             <Route
                                 path="/services"

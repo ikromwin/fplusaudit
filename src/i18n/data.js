@@ -43,8 +43,8 @@ export const i18n = {
             // About Details
             about_table_name: "Names of certificates",
             about_table_years: "Given years",
-            about_table_years_from: "from",
-            about_table_years_to: "to",
+            about_gallery_page: "Gallery",
+
 
             // Services page
             services: "Services",
@@ -95,9 +95,8 @@ export const i18n = {
             // About Details
             about_table_name: "Названия сертификатов",
             about_table_years: "Дано лет",
-            about_table_years_from: "с ",
-            about_table_years_to: "по",
-            achievements_title: "Достижения",
+            about_gallery_page: "Галерея",
+
             achievements_category: achievements_category.ru_RU,
 
             // Services page
@@ -151,9 +150,8 @@ export const i18n = {
             // About Details
             about_table_name: "Sertifikat nomlari",
             about_table_years: "Berilgan yili",
-            about_table_years_from: "dan",
-            about_table_years_to: "gacha",
-            achievements_title: "Yutuqlarimiz",
+            about_gallery_page: "Galeriya",
+
             achievements_category: achievements_category.en_US.certificates,
 
 

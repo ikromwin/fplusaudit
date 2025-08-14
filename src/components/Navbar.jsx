@@ -51,6 +51,16 @@ export default function Navbar() {
 
                                     {item.to === "/about" && (
                                         <div className="dropdown">
+
+                                            <NavLink
+                                                to={`/about/gallery`}
+                                                className={({ isActive }) =>
+                                                    isActive ? "dropdown-button active" : "dropdown-button"
+                                                }
+                                            >
+                                                {content.about_gallery_page}
+                                            </NavLink>
+                                            <hr />
                                             {AchievementCategory[lang].map((dropItem, dropIndex) => (
                                                 <NavLink
                                                     key={dropIndex}
@@ -62,6 +72,7 @@ export default function Navbar() {
                                                     {dropItem.title}
                                                 </NavLink>
                                             ))}
+
                                         </div>
                                     )}
 
@@ -140,6 +151,8 @@ export default function Navbar() {
                                                 {dropItem.title}
                                             </NavLink>
                                         ))}
+
+
                                     </div>
                                 </div>
 

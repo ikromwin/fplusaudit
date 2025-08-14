@@ -39,12 +39,7 @@ export default function About({ translations }) {
         </div>
       </section>
 
-      <section className="aboutUs-employee maxWidth">
-        <h1 className="sec-title">{t.teamImages}</h1>
-        <div className="items">
-          <ImageTabs />
-        </div>
-      </section>
+      
 
       <section className="about-images">
         <h2 className="sec-title maxWidth">{t.achienvementsImages}</h2>

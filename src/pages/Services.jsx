@@ -1,4 +1,4 @@
-import Linetitle from "../../components/LineTitleComponent";
+import Linetitle from "../components/LineTitleComponent";
 
 export default function Services({ translations }) {
     const t = translations

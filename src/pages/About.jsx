@@ -1,5 +1,5 @@
-import ImageTabs from "../../components/ImageTabs";
-import Linetitle from "../../components/LineTitleComponent";
+
+import Linetitle from "../components/LineTitleComponent";
 
 
 const achienvementsData = [1, 2, 3, 4, 5, 6, 7, 8, 9]

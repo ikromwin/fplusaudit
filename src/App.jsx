@@ -4,22 +4,22 @@ import { useLanguage } from "./context/languageContext";
 import { AnimatePresence, motion } from "framer-motion";
 
 // COMPONENTS
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
 
 
 // PAGES
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
-import AboutDetails from "./pages/about/AboutDetails";
-import Services from "./pages/services/Services";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import AboutDetails from "./pages/AboutDetails";
+import Services from "./pages/Services";
 import NewsList from './pages/news/NewsList';
 import NewsDetails from './pages/news/NewsDetails';
-import Contact from './pages/contact/Contact';
-import Vacancy from './pages/vacancy/Vacancy';
-import GalleryPage from "./pages/gallery/GalleryPage";
+import Contact from './pages/Contact';
+import Vacancy from './pages/Vacancy';
+import GalleryPage from "./pages/GalleryPage";
 
 
 
@@ -31,10 +31,10 @@ function App() {
     const location = useLocation();
 
     return (
-        <div className="App">
+        <div className="App ">
 
             {/* NAVBAR */}
-            <Navbar />
+            <Header />
 
             {/* CONTENT */}
             <AnimatePresence mode="wait">

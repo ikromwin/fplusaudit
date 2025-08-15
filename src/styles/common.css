@@ -14,15 +14,9 @@
     box-shadow: 0 0 40px #00000020;
 }
 
-.container {
-    max-width: 1200px;
-    width: 100%;
+.maxWidth {
     margin: 0 auto;
-    padding: 0 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
+    max-width: 1200px;
 }
 
 .logo {
@@ -253,20 +247,22 @@
     color: var(--main);
 }
 
-.responsive-dropdown .responsive-achievements-links{
+.responsive-dropdown .responsive-achievements-links {
     width: 100%;
     display: grid;
     border: 1px dashed var(--grey);
     border-radius: 10px;
     padding: 0.5rem;
 }
-.responsive-dropdown .responsive-achievements-links .title{
+
+.responsive-dropdown .responsive-achievements-links .title {
     margin-bottom: 15px;
     padding-left: 0.5rem;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
 }
+
 .responsive-dropdown .responsive-achievements-links .responsive-achievements {
     display: flex;
     overflow-x: scroll;

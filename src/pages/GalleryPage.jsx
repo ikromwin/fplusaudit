@@ -1,5 +1,5 @@
-import ImageTabs from "../../components/ImageTabs"
-import Linetitle from "../../components/LineTitleComponent"
+import ImageTabs from "../components/ImageTabs"
+import Linetitle from "../components/LineTitleComponent"
 
 function GalleryPage({ translations }) {
 
@@ -8,7 +8,6 @@ function GalleryPage({ translations }) {
     return (
         <div className="page__contact maxWidth">
             <Linetitle title={t.teamImages}></Linetitle>
-
 
             <div className="aboutUs-employee">
                 <div className="items">

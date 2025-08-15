@@ -3,7 +3,7 @@ import { Mail, Phone, User } from "lucide-react";
 
 
 // COMPONENTS
-import Linetitle from "../../components/LineTitleComponent";
+import Linetitle from "../components/LineTitleComponent";
 
 
 export default function Contact({ translations }) {

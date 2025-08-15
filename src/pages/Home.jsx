@@ -3,7 +3,7 @@ import { useRef, useState, useEffect } from "react";
 
 
 // CONTEXT
-import { useLanguage } from "../../context/languageContext.jsx";
+import { useLanguage } from "../context/languageContext.jsx";
 
 
 // THIDR PARTY
@@ -12,45 +12,45 @@ import CountUp from 'react-countup';
 
 
 // IMAGE IMPORTS
-import Thumbnail from "../../assets/thumbnail.jpg";
-import Banner from "../../assets/Banner.png";
+import Thumbnail from "../assets/thumbnail.jpg";
+import Banner from "../assets/Banner.png";
 // ======= PRINCIPLES ICONS (4) =======
-import Dove from "../../assets/principles/Dove.png";
-import Scales from "../../assets/principles/Scales.png";
-import Security from "../../assets/principles/Security.png";
-import Learning from "../../assets/principles/Learning.png";
+import Dove from "../assets/principles/Dove.png";
+import Scales from "../assets/principles/Scales.png";
+import Security from "../assets/principles/Security.png";
+import Learning from "../assets/principles/Learning.png";
 // ======= MP4 =======
-import Video from "../../assets/video.mp4";
+import Video from "../assets/video.mp4";
 
 
 
 
 
-import P1 from "../../assets/partners/p1.png";
-import P2 from "../../assets/partners/p2.png";
-import P3 from "../../assets/partners/p3.png";
-import P4 from "../../assets/partners/p4.png";
-import P5 from "../../assets/partners/p5.png";
-import P6 from "../../assets/partners/p6.png";
-import P7 from "../../assets/partners/p7.png";
-import P8 from "../../assets/partners/p8.png";
-import P9 from "../../assets/partners/p9.png";
-import P10 from "../../assets/partners/p10.png";
-import P11 from "../../assets/partners/p11.png";
-import P12 from "../../assets/partners/p12.png";
-import P13 from "../../assets/partners/p13.png";
-import P14 from "../../assets/partners/p14.png";
-import P15 from "../../assets/partners/p15.png";
-import P16 from "../../assets/partners/p16.png";
-import P17 from "../../assets/partners/p17.png";
-import P18 from "../../assets/partners/p18.png";
-import P19 from "../../assets/partners/p19.png";
-import P20 from "../../assets/partners/p20.png";
-import P21 from "../../assets/partners/p21.png";
-import P22 from "../../assets/partners/p22.png";
-import P23 from "../../assets/partners/p23.png";
-import P24 from "../../assets/partners/p24.png";
-import NewsCard from "../../components/NewsCard.jsx";
+import P1 from "../assets/partners/p1.png";
+import P2 from "../assets/partners/p2.png";
+import P3 from "../assets/partners/p3.png";
+import P4 from "../assets/partners/p4.png";
+import P5 from "../assets/partners/p5.png";
+import P6 from "../assets/partners/p6.png";
+import P7 from "../assets/partners/p7.png";
+import P8 from "../assets/partners/p8.png";
+import P9 from "../assets/partners/p9.png";
+import P10 from "../assets/partners/p10.png";
+import P11 from "../assets/partners/p11.png";
+import P12 from "../assets/partners/p12.png";
+import P13 from "../assets/partners/p13.png";
+import P14 from "../assets/partners/p14.png";
+import P15 from "../assets/partners/p15.png";
+import P16 from "../assets/partners/p16.png";
+import P17 from "../assets/partners/p17.png";
+import P18 from "../assets/partners/p18.png";
+import P19 from "../assets/partners/p19.png";
+import P20 from "../assets/partners/p20.png";
+import P21 from "../assets/partners/p21.png";
+import P22 from "../assets/partners/p22.png";
+import P23 from "../assets/partners/p23.png";
+import P24 from "../assets/partners/p24.png";
+import NewsCard from "../components/NewsCard.jsx";
 
 const PARTNER_LOGOS = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, P17, P18, P19, P20, P21, P22, P23, P24];
 
@@ -113,12 +113,12 @@ export default function Home({ translations }) {
         <div className="maxWidth">
           <h1 className="hero-text">{content.heroText || null}</h1>
         </div>
+
+
         <div className="hero-image">
           <img src={Banner} alt="Home Page Hero Banner | Signle" />
         </div>
       </div>
-
-
       {/* 
         ================================================
         ================= HERO SECTION =================

@@ -7,7 +7,7 @@ import "../styles/common.css";
 
 import AchievementCategory from "../i18n/data/achievements_category_data.json"
 
-export default function Navbar() {
+export default function Header() {
     const { lang, setLang, content } = useLanguage();
     const [isOpen, setIsOpen] = useState(false);
 
@@ -29,14 +29,14 @@ export default function Navbar() {
 
 
     return (
-        <nav className="navbar">
-            <div className="container">
-                <NavLink to="/" className="logo">
-                    <img src={BlackLogo} alt="F-plus audit logo" width={40} />
+        <nav className="sticky w-full top-0 left-0 bg-[#fffffff0] py-[10px] backdrop-filter backdrop-blur-[5px] z-10 [box-shadow:0_0_40px_#00000020]">
+            <div className="w-full  mx-auto max-w-[1200px] flex items-center justify-between">
+                <NavLink to="/" className="flex items-center gap-4">
+                    <img src={BlackLogo} alt="Logo" width={40} />
 
-                    <div>
-                        <h1>F-plus audit</h1>
-                        <p>{content.logoSubtitle}</p>
+                    <div className="leading-1">
+                        <h1 className="font-bold uppercase">F-plus audit</h1>
+                        <p className="text-sm opacity-60">{content.logoSubtitle}</p>
                     </div>
                 </NavLink>
 

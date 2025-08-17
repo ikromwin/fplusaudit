@@ -1,11 +1,36 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+
+
+
+// COMPONENTS
+
+
+// CONTEXTS
 import { useLanguage } from "../context/languageContext"
+
+
+// PUBLIC
 import BlackLogo from "../assets/logo-black.svg";
 
+
+// THIRD PARTY
+import { NavLink } from "react-router-dom";
+
+
+
+// DATA
+import AchievementCategory from "../i18n/data/achievements_category_data.json"
+
+
+
+
+// STYLE
 import "../styles/common.css";
 
-import AchievementCategory from "../i18n/data/achievements_category_data.json"
+
+
+
+
 
 export default function Header() {
     const { lang, setLang, content } = useLanguage();
@@ -29,14 +54,14 @@ export default function Header() {
 
 
     return (
-        <nav className="sticky w-full top-0 left-0 bg-[#fffffff0] py-[10px] backdrop-filter backdrop-blur-[5px] z-10 [box-shadow:0_0_40px_#00000020]">
-            <div className="w-full  mx-auto max-w-[1200px] flex items-center justify-between">
+        <nav className="sticky w-full top-0 left-0 bg-[#fffffff9] py-1 backdrop-filter backdrop-blur-[5px] z-10 [box-shadow:0_0_40px_#00000020]">
+            <div className="w-full mx-auto max-w-[1200px] flex items-center px-4 justify-between">
                 <NavLink to="/" className="flex items-center gap-4">
                     <img src={BlackLogo} alt="Logo" width={40} />
 
-                    <div className="leading-1">
-                        <h1 className="font-bold uppercase">F-plus audit</h1>
-                        <p className="text-sm opacity-60">{content.logoSubtitle}</p>
+                    <div className="uppercase">
+                        <h1 className="font-bold text-lg">F-plus audit</h1>
+                        <p className="opacity-50 text-sm">{content.logoSubtitle}</p>
                     </div>
                 </NavLink>
 

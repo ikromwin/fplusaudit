@@ -55,13 +55,16 @@ export default function Header() {
 
     return (
         <nav className="sticky w-full top-0 left-0 bg-[#fffffff9] py-1 backdrop-filter backdrop-blur-[5px] z-10 [box-shadow:0_0_40px_#00000020]">
-            <div className="w-full mx-auto max-w-[1200px] flex items-center px-4 justify-between">
-                <NavLink to="/" className="flex items-center gap-4">
+            <div className="w-full mx-auto max-w-[1200px] flex items-center justify-between px-4">
+                <NavLink to="/" className="flex items-center gap-4 py-2 sm:py-2 lg:py-0">
                     <img src={BlackLogo} alt="Logo" width={40} />
 
                     <div className="uppercase">
                         <h1 className="font-bold text-lg">F-plus audit</h1>
-                        <p className="opacity-50 text-sm">{content.logoSubtitle}</p>
+                        <p className="opacity-50 text-sm hidden
+                            sm:hidden
+                            lg:block
+                        ">{content.logoSubtitle}</p>
                     </div>
                 </NavLink>
 
@@ -85,7 +88,7 @@ export default function Header() {
                                             >
                                                 {content.about_gallery_page}
                                             </NavLink>
-                                            <hr />
+                                            
                                             {AchievementCategory[lang].map((dropItem, dropIndex) => (
                                                 <NavLink
                                                     key={dropIndex}

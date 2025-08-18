@@ -8,6 +8,7 @@ import { LanguageProvider } from "./context/languageContext";
 import './app.css';
 import "./styles/_reset.css";
 import "./styles/_global.css";
+import "./styles/components.css";
 import "./styles/media.css";
 import "./styles/ImageTabs.css";
 import "./index.css";

@@ -1,0 +1,58 @@
+/* 
+
+========================
+======== SLIDER ========
+========================
+
+*/
+
+.slider::before,
+.slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slider::before {
+    width: 60px;
+    left: 0;
+    background: linear-gradient(to right, #fff, transparent);
+}
+
+.slider::after {
+    right: 0;
+    width: 60px;
+    background: linear-gradient(to left, #fff, transparent);
+}
+
+
+
+
+
+
+
+/* 
+
+===========================
+======== NEWS CARD ========
+===========================
+
+*/
+
+.news-component {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.news-component .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    row-gap: 2rem;
+}

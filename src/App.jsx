@@ -1,7 +1,16 @@
-import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+
+
+
+// CONTEXTS
 import { useLanguage } from "./context/languageContext";
+
+
+// THIRD PARTY
 import { AnimatePresence, motion } from "framer-motion";
+
+
+
 
 // COMPONENTS
 import Header from "./components/Header";
@@ -11,7 +20,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 
 // PAGES
-import Home from "./pages/Home";
+import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import AboutDetails from "./pages/AboutDetails";
 import Services from "./pages/Services";
@@ -24,7 +33,6 @@ import GalleryPage from "./pages/GalleryPage";
 
 
 
-// ...existing code...
 
 function App() {
     const { content, lang } = useLanguage();
@@ -32,11 +40,8 @@ function App() {
 
     return (
         <div className="App ">
-
-            {/* NAVBAR */}
             <Header />
 
-            {/* CONTENT */}
             <AnimatePresence mode="wait">
                 <motion.div
                     key={`${lang}-${location.pathname}`}
@@ -50,7 +55,7 @@ function App() {
                         <Routes location={location} key={location.pathname}>
                             <Route
                                 path="/"
-                                element={<Home translations={content} />}
+                                element={<HomePage translations={content} />}
                             />
                             <Route
                                 path="/about"
@@ -96,7 +101,5 @@ function App() {
         </div>
     );
 }
-
-//
 
 export default App;

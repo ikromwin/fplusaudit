@@ -8,6 +8,12 @@ import { useLanguage } from "../context/languageContext.jsx";
 
 // THIDR PARTY
 import CountUp from 'react-countup';
+import { Play } from "lucide-react";
+
+
+// CPOMPONENTS
+import ImageLoad from "../components/ImageLoad.jsx"
+import SliderTrack from "../components/SliderTrack.jsx";
 
 
 
@@ -64,7 +70,7 @@ function shuffleArray(array) {
 }
 
 
-export default function Home({ translations }) {
+export default function HomePage({ translations }) {
   const { data } = useLanguage();
 
   const t = translations || {};
@@ -109,29 +115,51 @@ export default function Home({ translations }) {
 
   return (
     <main>
-      <div className="hero">
+      <div className="relative w-full px-4 py-0 after:content-[''] after:absolute after:w-full after:h-full after:bg-[color:var(--overlay-background)] after:left-0 after:top-0
+        h-[60vh]
+        lg:h-[50vh]
+        sm:h-[60vh]
+      ">
         <div className="maxWidth">
-          <h1 className="hero-text">{content.heroText || null}</h1>
+          <h1 className="absolute font-black uppercase z-[1] max-w-[800px] text-[color:var(--light)] leading-[4rem] -translate-y-2/4 top-[48%]
+            text-[1.4rem]
+            lg:text-[2rem]
+            sm:text-[1.4rem]
+          ">
+            {content.heroText || null}
+          </h1>
         </div>
 
 
-        <div className="hero-image">
-          <img src={Banner} alt="Home Page Hero Banner | Signle" />
+        <div>
+          <img
+            src={Banner}
+            alt="Hero Banner"
+            className="absolute w-full h-full object-cover flex justify-center items-center select-none right-0 bottom-0"
+          />
         </div>
       </div>
+
+
       {/* 
         ================================================
         ================= HERO SECTION =================
         ================================================
       */}
-      <div className="hero-about">
-        <div className="items">
-          {content.heroAbout ? content.heroAbout?.map((item, index) => (
-            <div className="item" key={index}>
-              <h2>{item.title}</h2>
+      <div className="translate-y-0 lg:translate-y-[-30%] max-w-[800px] w-full z-[2] mx-auto my-0 p-4">
+        <div className="w-full flex justify-between items-center flex-col gap-4
+          sm:flex sm:flex-col
+          lg:flex lg:flex-row
+        ">
 
-              <p><CountUp key={index} end={parseInt(item.num)} duration={2} /></p>
+          {content.heroAbout ? content.heroAbout?.map((item, index) => (
+            <div key={index} className="flex-col h-[120px] w-full border border-[#eee] rounded shadow-[0_0_30px_#3b3d3f10] flex justify-center items-center transition-[background-color] duration-[var(--trans)] px-8 py-4 border-solid bg-white">
+
+              <h2 className="text-[1.1rem] text-center uppercase text-[color:var(--light-medium)] font-extralight mb-[15px]">{item.title}</h2>
+
+              <p className="text-[1.1rem] uppercase text-[color:var(--main)] font-black"><CountUp key={index} end={parseInt(item.num)} duration={2} /></p>
             </div>
+
           )) : null}
         </div>
       </div>
@@ -143,18 +171,33 @@ export default function Home({ translations }) {
         ================= ABOUT SECTION ================
         ================================================
       */}
-      <section className="home-about maxWidth">
+      <section className="mt-16 px-4 py-0 maxWidth">
         <h2 className="sec-title">{content.aboutTitle || null}</h2>
-        <div className="block">
-          <div className="hero-about-text">
-            {content.aboutText ? <p dangerouslySetInnerHTML={{ __html: content.aboutText }} /> : null}
+        <div className="flex gap-8 justify-between
+              flex-col
+              lg:flex-row lg:gap-4
+              sm:flex-col sm:gap-8
+          ">
+          <div>
+            {content.aboutText ? <p
+              className="max-w-[650px] font-light text-[color:var(--txt-light)] text-base leading-[var(--txt-space)]"
+              dangerouslySetInnerHTML={{ __html: content.aboutText }} /> : null}
           </div>
-          <div className="hero-about-video">
-            <div className="play" onClick={handlePlayClick} style={{ cursor: "pointer" }}>
-              <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff"><path d="M320-273v-414q0-17 12-28.5t28-11.5q5 0 10.5 1.5T381-721l326 207q9 6 13.5 15t4.5 19q0 10-4.5 19T707-446L381-239q-5 3-10.5 4.5T360-233q-16 0-28-11.5T320-273Zm80-207Zm0 134 210-134-210-134v268Z"></path></svg>
+          <div className="relative after:content-[''] after:absolute after:w-full after:h-full after:bg-[color:var(--overlay-background)] after:opacity-60 after:rounded-[20px] after:left-0 after:top-0
+            w-full h-[250px]
+            lg:w-[400px] lg:h-[250px]
+            sm:w-full sm:h-[250px]
+          ">
+
+            <div
+              className="absolute cursor-pointer -translate-x-2/4 -translate-y-2/4 w-[70px] h-[70px] bg-[color:var(--main)] flex justify-center items-center z-[1] cursor-pointer transition-[0.3s] duration-[150ms] rounded-[25px] left-2/4 top-2/4 hover:-translate-x-2/4 hover:-translate-y-2/4 hover:scale-95 select-none"
+              onClick={handlePlayClick}
+            >
+              <Play className="opacity-80" size={16} color="#fff" />
             </div>
-            <div className="video-thumb" onClick={handlePlayClick} style={{ cursor: "pointer" }}>
-              <img src={Thumbnail} alt="Video Thumbnail" width={400} />
+
+            <div onClick={handlePlayClick} style={{ cursor: "pointer" }}>
+              <img src={Thumbnail} alt="Video Thumbnail" className="h-[250px] w-full object-cover select-none rounded-[20px]" />
             </div>
           </div>
         </div>
@@ -261,27 +304,25 @@ export default function Home({ translations }) {
         =============== PARTNERS SECTION ===============
         ================================================
       */}
-      <section className="home-partners">
-        <h2 className="sec-title maxWidth">{content.partnerTitle || null}</h2>
-        <div className="block maxWidth">
-          <div className="slider">
-            <div className="slider-track">
-              {logos1.map((logo, index) => (
-                <div className="item" key={index}>
-                  <img src={logo} alt={`Partner ${index + 1}`} />
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="slider">
-            <div className="slider-track">
-              {logos2.map((logo, index) => (
-                <div className="item" key={index}>
-                  <img src={logo} alt={`Partner ${index + 1}`} />
-                </div>
-              ))}
-            </div>
-          </div>
+      <section className="maxWidth px-4">
+        <h2 className="sec-title">{content.partnerTitle || null}</h2>
+        <div className="grid gap-4">
+
+          <SliderTrack speed={80}>
+            {logos1.map((logo, index) => (
+              <div className="w-[150px] sm:w-[150px] lg:w-[200px]" key={index}>
+                <ImageLoad imgSrc={logo} imgAlt={index + 1}/>
+              </div>
+            ))}
+          </SliderTrack>
+
+          <SliderTrack reverse={true} speed={80}>
+            {logos1.map((logo, index) => (
+              <div className="w-[150px] sm:w-[150px] lg:w-[200px]" key={index}>
+                <ImageLoad imgSrc={logo} imgAlt={index + 1} />
+              </div>
+            ))}
+          </SliderTrack>
         </div>
       </section>
 
@@ -298,13 +339,15 @@ export default function Home({ translations }) {
         <div className="news-component">
           <div className="items">
             {data.news && data.news.length > 0 ? data.news.map((newsItem, index) => (
-              <NewsCard
-                key={index}
-                imgSrc={newsItem.image || Thumbnail}
-                title={newsItem.title || "No title available"}
-                date={newsItem.date || "No date available"}
-                href={`/news/${newsItem.id}`}
-              />
+              <>
+                <NewsCard
+                  key={index}
+                  imgSrc={newsItem.image || Thumbnail}
+                  title={newsItem.title || "No data"}
+                  date={newsItem.date || "No date"}
+                  href={`/news/${newsItem.id}`}
+                />
+              </>
             )) : null}
           </div>
         </div>

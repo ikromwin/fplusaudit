@@ -1,5 +1,6 @@
 
 import Linetitle from "../components/LineTitleComponent";
+import SliderTrack from "../components/SliderTrack";
 
 
 const achienvementsData = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -39,20 +40,18 @@ export default function About({ translations }) {
         </div>
       </section>
 
-      
+
 
       <section className="about-images">
         <h2 className="sec-title maxWidth">{t.achienvementsImages}</h2>
         <div className="block maxWidth">
-          <div className="slider">
-            <div className="slider-track">
-              {achienvementsData.map((_, index) => (
-                <div className="item" key={index}>
-                  <img src={`/data/achievements/ACHIVEMENTS_${index + 1}.jpg`} alt={`Partner ${index + 1}`} />
-                </div>
-              ))}
-            </div>
-          </div>
+          <SliderTrack>
+            {achienvementsData.map((_, index) => (
+              <div className="item" key={index}>
+                <img src={`/data/achievements/ACHIVEMENTS_${index + 1}.jpg`} width={400} alt={`Partner ${index + 1}`} />
+              </div>
+            ))}
+          </SliderTrack>
         </div>
       </section>
 

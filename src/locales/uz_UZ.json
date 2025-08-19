@@ -154,6 +154,27 @@
     "news": {
         "title": "Yangiliklar"
     },
-    "contact": {},
-    "vacancy": {}
+    "contact": {
+        "title": "Savolingiz bo'lsa yozib qoldiring.",
+        "description": "Ma'lumotlaringizni quyidagi form orqali yuborsangiz, sizga yordam berishdan xursand bo'lamiz. Formni to'ldirishingiz yoki bizga elektron pochta orqali yozishingiz mumkin: info@f-plusaudit.uz)",
+        "full_name": "To'lliq ism *",
+        "email": "Elektron pochta *",
+        "phone": "Telefon raqam",
+        "message": "Xabaringizni shu joyga yozing...",
+        "send": "Yuborish",
+        "sending": "Yuborilyabdi",
+        "sent": "Yuborildi"
+    },
+    "vacancy": {
+        "title": "Bizning jamoamizga qo’shiling!",
+        "sub_title": "<li>Toshkent shahrida qulay va markazda joylashgan ofisda barcha auditor uchun imkoniyatlar to'liq yaratilgan</li><li>Uzoq yillik tajribali va malakali auditorlar jamoasi bilan birga ishlash imkoniyati</li><li>Yuqori darajadagi ish xaqi to'lovlari</li>",
+        "items_title": "Biz kimlarni qidiryapmiz?",
+        "items": [
+            {
+                "id": 1,
+                "title": "Tajribali auditor",
+                "description": "Auditor malaka sertifikatiga ega malakali xodim. Buxgalter yoki auditor sifatida kamida 5 yillik tajriba ega xodim."
+            }
+        ]
+    }
 }

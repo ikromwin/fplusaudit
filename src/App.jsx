@@ -84,11 +84,11 @@ function App() {
                             />
                             <Route
                                 path="/contact"
-                                element={<Contact translations={content} />}
+                                element={<Contact translations={translations} />}
                             />
                             <Route
                                 path="/vacancy"
-                                element={<Vacancy translations={content} />}
+                                element={<Vacancy translations={translations} />}
                             />
                         </Routes>
                     </AnimatePresence>

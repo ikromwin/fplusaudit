@@ -47,7 +47,7 @@ export default function Footer({ translations }) {
                         <ul className='flex flex-col gap-2'>
                             {
                                 link.map((item, index) =>
-                                    <li>
+                                    <li key={index}>
                                         <NavLink className="text-base font-light transition-[0.2s] duration-[ease] px-0 py-[0.2rem] rounded-[5px] hover:text-white hover:px-2 hover:py-[0.2rem] hover:bg-[#eeeeee20]" to={item.to}>
                                             {item.label}
                                         </NavLink>

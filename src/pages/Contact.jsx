@@ -20,12 +20,6 @@ export default function Contact({ translations }) {
 
 
 
-    const t = translations
-    const content = t.contact_content
-
-
-
-
     const handleChange = (e) => {
         setFormData({
             ...formData,
@@ -77,14 +71,12 @@ export default function Contact({ translations }) {
 
     return (
         <div className="page__contact maxWidth">
-            <Linetitle title={content.LineTitle}></Linetitle>
+            <Linetitle title={translations.contact.title}></Linetitle>
 
 
 
             <div className="info-text">
-                <p className="info">{content.info}</p>
-                <br />
-                <p className="subInfo">{content.subInfo} (info@f-plusaudit.uz)</p>
+                <p className="info">{translations.contact.description}</p>
             </div>
 
             <form onSubmit={handleSubmit} >
@@ -92,7 +84,7 @@ export default function Contact({ translations }) {
                     <input
                         type="text"
                         required
-                        placeholder={content.fullName}
+                        placeholder={translations.contact.full_name}
                         name="fullName"
                         value={formData.fullName}
                         onChange={handleChange}
@@ -108,7 +100,7 @@ export default function Contact({ translations }) {
                         type="email"
                         required
                         name="email"
-                        placeholder={content.email}
+                        placeholder={translations.contact.email}
                         value={formData.email}
                         onChange={handleChange}
                     />
@@ -122,7 +114,7 @@ export default function Contact({ translations }) {
                     <input
                         type="number"
                         name="phone"
-                        placeholder={content.phone}
+                        placeholder={translations.contact.phone}
                         value={formData.phone}
                         onChange={handleChange}
                     />
@@ -135,7 +127,7 @@ export default function Contact({ translations }) {
                 <div className="input-group">
                     <textarea
                         name="message"
-                        placeholder={content.message}
+                        placeholder={translations.contact.message}
                         value={formData.message}
                         onChange={handleChange}
                     ></textarea>
@@ -143,7 +135,7 @@ export default function Contact({ translations }) {
 
                 <button type="submit" className={status ? "send-button sent" : "send-button"} disabled={status}>
                     <p>
-                        {!status ? <p>{content.Send}</p> : <p>{content.Sent}</p>}
+                        {!status ? <p>{translations.contact.send}</p> : <p>{translations.contact.sent}</p>}
                     </p>
                 </ button>
             </form>

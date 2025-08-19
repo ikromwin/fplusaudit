@@ -47,7 +47,7 @@ export default function About({ сontentе, translations }) {
         <div className="block maxWidth">
           <SliderTrack speed={20} >
             {Object.values(images).map((image, index) => (
-              <div className="flex-[0_0_300px] min-h-[150px] overflow-hidden rounded-lg p-1 ml-2.5 bg-[#eee]" key={index}>
+              <div className="flex-[0_0_300px] min-h-[150px] overflow-hidden rounded-lg ml-2.5 bg-[#eee]" key={index}>
                 <ImageLoad imgSrc={image} alt={"Achievement"} />
               </div>
             ))}

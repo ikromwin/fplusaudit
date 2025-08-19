@@ -20,12 +20,14 @@ import { NavLink } from "react-router-dom";
 
 // DATA
 import AchievementCategory from "../i18n/data/achievements_category_data.json"
-
+import { languages } from "../i18n/index"
 
 
 
 // STYLE
 import "../styles/common.css";
+import { Globe } from "lucide-react";
+import { tr } from "framer-motion/client";
 
 
 
@@ -33,29 +35,29 @@ import "../styles/common.css";
 
 
 export default function Header() {
-    const { lang, setLang, content } = useLanguage();
+    const { lang, setLang, content, translations } = useLanguage();
     const [isOpen, setIsOpen] = useState(false);
 
     const link = [
-        { to: "/", label: content.home },
-        { to: "/about", label: content.about + " " + "▾" },
-        { to: "/services", label: content.services },
-        { to: "/news", label: content.news },
-        { to: "/contact", label: content.contact }
+        { to: "/", label: translations.navbar.home },
+        { to: "/about", label: translations.navbar.about + " " + "▾" },
+        { to: "/services", label: translations.navbar.services },
+        { to: "/news", label: translations.navbar.news },
+        { to: "/contact", label: translations.navbar.contact }
     ]
     const responsiveLink = [
-        { to: "/", label: content.home },
-        { to: "/about", label: content.about },
-        { to: "/services", label: content.services },
-        { to: "/news", label: content.news },
-        { to: "/contact", label: content.contact }
+        { to: "/", label: translations.navbar.home },
+        { to: "/about", label: translations.navbar.about },
+        { to: "/services", label: translations.navbar.services },
+        { to: "/news", label: translations.navbar.news },
+        { to: "/contact", label: translations.navbar.contact }
     ]
-
 
 
     return (
         <nav className="sticky w-full top-0 left-0 bg-[#fffffff9] py-1 backdrop-filter backdrop-blur-[5px] z-10 [box-shadow:0_0_40px_#00000020]">
             <div className="w-full mx-auto max-w-[1200px] flex items-center justify-between px-4">
+
                 <NavLink to="/" className="flex items-center gap-4 py-2 sm:py-2 lg:py-0">
                     <img src={BlackLogo} alt="Logo" width={40} />
 
@@ -64,13 +66,14 @@ export default function Header() {
                         <p className="opacity-50 text-sm hidden
                             sm:hidden
                             lg:block
-                        ">{content.logoSubtitle}</p>
+                        ">
+                            {translations.navbar.logo_subtitle}
+                        </p>
                     </div>
                 </NavLink>
 
 
                 <div className="nav-container">
-
                     <div className="nav-links buttons-menu">
                         {
                             link.map((item, index) => (
@@ -86,9 +89,9 @@ export default function Header() {
                                                     isActive ? "dropdown-button active" : "dropdown-button"
                                                 }
                                             >
-                                                {content.about_gallery_page}
+                                                {translations.navbar.about_dropdown.team_photos}
                                             </NavLink>
-                                            
+
                                             {AchievementCategory[lang].map((dropItem, dropIndex) => (
                                                 <NavLink
                                                     key={dropIndex}
@@ -111,25 +114,26 @@ export default function Header() {
                     </div>
 
 
-
                     <div className="lang-container buttons-menu">
                         <div className="lang-locale button btn-menu">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" width={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
-                            </svg>
-
+                            <Globe size={20} />
                             <select
                                 value={lang}
-                                onChange={e => setLang(e.target.value)}
-                                className=" "
+                                onChange={(e) => setLang(e.target.value)}
                             >
-                                <option value="en_US">English</option>
-                                <option value="ru_RU">Russian</option>
-                                <option value="uz_UZ">Uzbek</option>
+                                {languages.map((l) => (
+                                    <option key={l.code} value={l.code}>
+                                        {l.name}
+                                    </option>
+                                ))}
                             </select>
                         </div>
                     </div>
                 </div>
+
+
+
+
 
                 <div className="responsive-menu">
 
@@ -184,20 +188,18 @@ export default function Header() {
                                     </div>
                                 </div>
 
-                                <div className="lang-container">
+                                <div className="lang-container flex items-center">
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" width={20} viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
-                                    </svg>
-
+                                    <Globe size={20} />
                                     <select
                                         value={lang}
-                                        onChange={e => setLang(e.target.value)}
-                                        className=""
+                                        onChange={(e) => setLang(e.target.value)}
                                     >
-                                        <option value="en_US">English</option>
-                                        <option value="ru_RU">Russian</option>
-                                        <option value="uz_UZ">Uzbek</option>
+                                        {languages.map((l) => (
+                                            <option key={l.code} value={l.code}>
+                                                {l.name}
+                                            </option>
+                                        ))}
                                     </select>
 
                                 </div>

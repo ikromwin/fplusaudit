@@ -191,21 +191,7 @@
         grid-template-columns: 1fr;
     }
 
-    .about-images .slider .item {
-        flex: 0 0 180px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 10px;
-    }
-
-    .about-images .slider .item img {
-        max-width: auto;
-        height: 180px;
-        user-select: none;
-        -webkit-user-drag: none;
-        border-radius: 10px;
-    }
+    
 
     .image-tabs {
         display: flex;

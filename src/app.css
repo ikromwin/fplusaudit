@@ -435,28 +435,3 @@ table th {
     font-weight: 200;
     color: var(--txt-light);
 }
-
-
-
-/*  */
-
-
-.about-images .items {
-    display: flex;
-    align-items: center;
-    animation: scroll-logos 20s linear infinite;
-
-}
-
-.about-images .slider {
-    overflow: hidden;
-    width: 100%;
-    margin: 12px 0;
-    position: relative;
-}
-
-/* Add left and right shadow overlays */
-
-.about-images .sec-title {
-    padding: 0 1rem;
-}

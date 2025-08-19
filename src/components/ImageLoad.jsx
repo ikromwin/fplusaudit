@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 
 
+
 // THIRD PARTY
 import { Loader } from "lucide-react";
 
 
-export default function ImageLoad({ imgSrc, imgAlt, w, h }) {
+export default function ImageLoad({ imgSrc, imgAlt }) {
     const [imgLoaded, setImgLoaded] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
     const imgRef = useRef(null);
@@ -35,24 +36,22 @@ export default function ImageLoad({ imgSrc, imgAlt, w, h }) {
     return (
         <div
             ref={imgRef}
-            className={`relative w-[${w}] h-[${h}] flex items-center justify-center`}
+            className={`relative flex items-center justify-center w-full h-full  rounded-lg`}
         >
-
             {
                 isVisible ?
                     <>
-                        {!imgLoaded && <Loader className="animate-spin" color="#999999" strokeWidth={2.25} />}
+                        {!imgLoaded && <Loader className="animate-spin" color="#888" size={20} strokeWidth={2.25} />}
                         <img
-                            className={`transition-opacity object-cover duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
+                            className={`transition-opacity duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
                             src={imgSrc}
                             alt={imgAlt}
-                            width="100%"
                             onLoad={() => setImgLoaded(true)}
                             onError={() => setImgLoaded(true)}
                         />
                     </>
                     :
-                    <Loader className="animate-spin" color="#999999" strokeWidth={2.25} />
+                    <Loader className="animate-spin" color="#888" strokeWidth={2.25} size={20} />
             }
         </div>
     )

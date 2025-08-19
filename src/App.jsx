@@ -35,11 +35,11 @@ import GalleryPage from "./pages/GalleryPage";
 
 
 function App() {
-    const { content, lang } = useLanguage();
+    const { content, lang, translations } = useLanguage();
     const location = useLocation();
 
     return (
-        <div className="App ">
+        <div className="App">
             <Header />
 
             <AnimatePresence mode="wait">
@@ -50,16 +50,17 @@ function App() {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.3 }}
                 >
-                    <ScrollToTop />
+                    {/* <ScrollToTop /> */}
+
                     <AnimatePresence mode="wait">
                         <Routes location={location} key={location.pathname}>
                             <Route
                                 path="/"
-                                element={<HomePage translations={content} />}
+                                element={<HomePage translations={translations} />}
                             />
                             <Route
                                 path="/about"
-                                element={<About translations={content} />}
+                                element={<About contentе={content} translations={translations} />}
                             />
                             <Route
                                 path="/about/:id"
@@ -71,7 +72,7 @@ function App() {
                             />
                             <Route
                                 path="/services"
-                                element={<Services translations={content} />}
+                                element={<Services translations={translations} />}
                             />
                             <Route
                                 path="/news"
@@ -92,10 +93,10 @@ function App() {
                         </Routes>
                     </AnimatePresence>
 
-                    {/* FOOTER */}
-                    <Footer translations={content}></Footer>
 
 
+
+                    <Footer translations={translations}></Footer>
                 </motion.div>
             </AnimatePresence>
         </div>

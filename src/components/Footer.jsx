@@ -5,8 +5,17 @@ import { NavLink } from 'react-router-dom';
 
 export default function Footer({ translations }) {
 
+    const { footer } = translations;
 
-    const t = translations || {};
+
+    const link = [
+        { to: "/", label: translations.navbar.home },
+        { to: "/about", label: translations.navbar.about },
+        { to: "/services", label: translations.navbar.services },
+        { to: "/news", label: translations.navbar.news },
+        { to: "/contact", label: translations.navbar.contact },
+        { to: "/vacancy", label: translations.navbar.vacancy }
+    ]
 
     return (
         <footer className="relative text-[color:var(--light)] overflow-hidden mt-32 pt-8 pb-4 px-4 bg-[#3c42c8]">
@@ -17,31 +26,34 @@ export default function Footer({ translations }) {
 
                 <ul className='relative flex justify-between gap-8 mt-8'>
                     <li className='text-base font-extralight flex flex-col gap-4'>
-                        <h3 className='text-lg font-normal text-[color:var(--light)] uppercase opacity-50 mb-[0.8rem]'>{t.footerContactUs}</h3>
-                        <p className='leading-[25px]' dangerouslySetInnerHTML={{ __html: t.footerTimes }}></p>
-                        <p className='leading-[25px]' dangerouslySetInnerHTML={{ __html: t.footerAddress }}></p>
+                        <h3 className='text-lg font-normal text-[color:var(--light)] uppercase opacity-50 mb-[0.8rem]'>{footer.contact_us}</h3>
+                        <p className='leading-[25px]' dangerouslySetInnerHTML={{ __html: footer.working_hours }}>{ }</p>
+                        <p className='leading-[25px]' dangerouslySetInnerHTML={{ __html: footer.address }}></p>
 
                         <div className='flex gap-4 mt-8'>
                             <a className='relative w-[55px] h-[55px] flex items-center justify-center after:absolute after:content-[""] after:w-full after:h-full after:transition-[0.2s] after:duration-[ease] after:rounded-[50%] after:left-0 after:top-0 active:after:transition-[0s] after:bg-[#ffffff20]' href="tel:+998785550070">
-                                <Phone size={18}/>
+                                <Phone size={18} />
                             </a>
                             <a className='relative w-[55px] h-[55px] flex items-center justify-center after:absolute after:content-[""] after:w-full after:h-full after:transition-[0.2s] after:duration-[ease] after:rounded-[50%] after:left-0 after:top-0 active:after:transition-[0s] after:bg-[#ffffff20]' href="mailto:info@f-plusaudit.uz">
-                                <Mail size={18}/>
+                                <Mail size={18} />
                             </a>
                             <a className='relative w-[55px] h-[55px] flex items-center justify-center after:absolute after:content-[""] after:w-full after:h-full after:transition-[0.2s] after:duration-[ease] after:rounded-[50%] after:left-0 after:top-0 active:after:transition-[0s] after:bg-[#ffffff20]' href="https://t.me/fplusaudit" target="_blank" rel="noopener noreferrer">
-                                <SendHorizontal size={18}/>
+                                <SendHorizontal size={18} />
                             </a>
                         </div>
                     </li>
                     <li className='list-links'>
-                        <h3 className='text-lg font-normal text-[color:var(--light)] uppercase opacity-50 mb-[0.8rem]'>{t.footerContactUs}</h3>
+                        <h3 className='text-lg font-normal text-[color:var(--light)] uppercase opacity-50 mb-[0.8rem]'>{footer.all_pages}</h3>
                         <ul className='flex flex-col gap-2'>
-                            <li><NavLink className="text-base font-light transition-[0.2s] duration-[ease] px-0 py-[0.2rem] rounded-[5px] hover:text-white hover:px-2 hover:py-[0.2rem] hover:bg-[#eeeeee20]" to="/">{t.home}</NavLink></li>
-                            <li><NavLink className="text-base font-light transition-[0.2s] duration-[ease] px-0 py-[0.2rem] rounded-[5px] hover:text-white hover:px-2 hover:py-[0.2rem] hover:bg-[#eeeeee20]" to="/about">{t.about}</NavLink></li>
-                            <li><NavLink className="text-base font-light transition-[0.2s] duration-[ease] px-0 py-[0.2rem] rounded-[5px] hover:text-white hover:px-2 hover:py-[0.2rem] hover:bg-[#eeeeee20]" to="/services">{t.services}</NavLink></li>
-                            <li><NavLink className="text-base font-light transition-[0.2s] duration-[ease] px-0 py-[0.2rem] rounded-[5px] hover:text-white hover:px-2 hover:py-[0.2rem] hover:bg-[#eeeeee20]" to="/news">{t.news}</NavLink></li>
-                            <li><NavLink className="text-base font-light transition-[0.2s] duration-[ease] px-0 py-[0.2rem] rounded-[5px] hover:text-white hover:px-2 hover:py-[0.2rem] hover:bg-[#eeeeee20]" to="/contact">{t.contact}</NavLink></li>
-                            <li><NavLink className="text-base font-light transition-[0.2s] duration-[ease] px-0 py-[0.2rem] rounded-[5px] hover:text-white hover:px-2 hover:py-[0.2rem] hover:bg-[#eeeeee20]" to="/vacancy">{t.vacancy}</NavLink></li>
+                            {
+                                link.map((item, index) =>
+                                    <li>
+                                        <NavLink className="text-base font-light transition-[0.2s] duration-[ease] px-0 py-[0.2rem] rounded-[5px] hover:text-white hover:px-2 hover:py-[0.2rem] hover:bg-[#eeeeee20]" to={item.to}>
+                                            {item.label}
+                                        </NavLink>
+                                    </li>
+                                )
+                            }
                         </ul>
                     </li>
                 </ul>
@@ -51,7 +63,7 @@ export default function Footer({ translations }) {
                 </div>
 
                 <div className='h-[0.5px] w-full bg-[white]'></div>
-                <p className='footer-copyright'>{t.footerCopyRights}</p>
+                <p className='footer-copyright'>{footer.copyright}</p>
             </div>
         </footer>
     );

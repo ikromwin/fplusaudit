@@ -1,0 +1,159 @@
+{
+    "__name": "English",
+    "common": {},
+    "navbar": {
+        "logo_subtitle": "Auditor organization",
+        "home": "Home",
+        "about": "About",
+        "about_dropdown": {
+            "team_photos": "Gallery"
+        },
+        "services": "Services",
+        "news": "News",
+        "contact": "Contact",
+        "vacancy": "Vacancy"
+    },
+    "footer": {
+        "contact_us": "Contact Us",
+        "working_hours": "Working hours: from Monday to Friday at 9:00-17:00",
+        "address": "Tashkent city, Yashnabad district, Cholpon MFY, Fergana road, 5a-house, room 26.",
+        "all_pages": "All pages",
+        "copyright": "© 'F-PLUS AUDIT' LLC Audit organization."
+    },
+    "home": {
+        "banner": "Providing auditing and professional consulting services to help grow your business as it expands",
+        "card_info": [
+            {
+                "title": "Employees",
+                "num": 14
+            },
+            {
+                "title": "Partners",
+                "num": 1000
+            },
+            {
+                "title": "Services",
+                "num": 6
+            }
+        ],
+        "about_company_title": "About company",
+        "about_company": "F-PLUS AUDIT Limited Liability Company audit organization was registered by the State Services Center on September 29, 2016. Since then, it has provided professional auditing and consulting services. <br/><br/> On March 15, 2022, our audit organization was included in the register of audit organizations authorized to conduct mandatory audits by the Ministry of Economy and Finance.",
+        "principles_title": "Our principles",
+        "principle1": "Independence",
+        "principle2": "Integrity and honesty",
+        "principle3": "Professional knowledge",
+        "principle4": "Data privacy",
+        "partners_title": "Our partners",
+        "latest_news_title": "Latest news"
+    },
+    "about": {
+        "title": "About Us",
+        "description": "International Standards on Auditing (ISAs), International Standards on Quality Control (ISQCs), International Standards for Analytical Reviews, and related services standards are issued by the International Auditing and Assurance Standards Board (IAASB) of the International Federation of Accountants (IFAC). These standards ensure trust and consistency in auditing practices. <br/><br/> In Uzbekistan, auditing activities are conducted based on these international standards, provided they do not conflict with national legislation. These standards are made available on the official website of the authorized state body for auditing, with permission from IFAC for publication in Uzbekistan. The procedure for recognizing and applying international auditing standards within the country is determined by the Cabinet of Ministers of Uzbekistan.",
+        "employees_title": "Employees",
+        "employees": [
+            {
+                "id": 1,
+                "name": "Yuldashev Farhodjon Maxmudjonovich",
+                "image": "/data/employee_images/E_1.jpg",
+                "jobTitle": "CEO and auditor",
+                "description": "2020-2021 winner of the Republican competition «Best internal auditor» and owner of qualification certificates such as «External auditor and internal auditor», as well as an auditor of the international category."
+            },
+            {
+                "id": 2,
+                "name": "Karabayeva Olga Shuxratjonovna",
+                "image": "/data/employee_images/E_2.jpg",
+                "jobTitle": "Auditor",
+                "description": "'External auditor' qualification certificate holder auditor."
+            },
+            {
+                "id": 3,
+                "name": "Abdullaev Mansurjon Xusnimuxammad o'g'li",
+                "image": "/data/employee_images/E_3.jpg",
+                "jobTitle": "Auditor",
+                "description": "'Owner of qualification certificates such as «External auditor and internal auditor», as well as an auditor of the international category."
+            },
+            {
+                "id": 4,
+                "name": "Yuldasheva Xayitxon Zokir qizi",
+                "image": "/data/employee_images/E_4.jpg",
+                "jobTitle": "Auditor",
+                "description": "'External auditor' qualification certificate holder auditor."
+            },
+            {
+                "id": 5,
+                "name": "Mirjamolova Nozima Miragzamovna",
+                "image": "/data/employee_images/E_5.jpg",
+                "jobTitle": "Auditor",
+                "description": "'External auditor' qualification certificate holder auditor."
+            },
+            {
+                "id": 6,
+                "name": "Yuldashev Ravshan Usarovich",
+                "image": "/data/employee_images/E_6.jpg",
+                "jobTitle": "Auditor",
+                "description": "'External auditor' qualification certificate holder auditor."
+            },
+            {
+                "id": 7,
+                "name": "Abdullaev Rustamjon Axmedjanovich",
+                "image": "/data/employee_images/E_7.jpg",
+                "jobTitle": "Auditor",
+                "description": "'External auditor' qualification certificate holder auditor."
+            },
+            {
+                "id": 8,
+                "name": "Umarov Sanjar Shavkatovich",
+                "image": "/data/employee_images/E_8.jpg",
+                "jobTitle": "Auditor",
+                "description": "'External auditor' qualification certificate holder auditor."
+            },
+            {
+                "id": 9,
+                "name": "Mirzayev Voxid Sadikjanovich",
+                "image": "/data/employee_images/E_9.jpg",
+                "jobTitle": "Auditor",
+                "description": "'External auditor' qualification certificate holder auditor."
+            },
+            {
+                "id": 10,
+                "name": "Nurmuxammadov Islomjon Xusnimuxammad",
+                "image": "/data/employee_images/E_10.jpg",
+                "jobTitle": "Auditor",
+                "description": "'External auditor' qualification certificate holder auditor."
+            },
+            {
+                "id": 11,
+                "name": "Davlyanova Sayxa Umid qizi",
+                "image": "/data/employee_images/E_11.jpg",
+                "jobTitle": "Auditor",
+                "description": "'External auditor' qualification certificate holder auditor."
+            },
+            {
+                "id": 12,
+                "name": "Maxkamov Farxodjon Fazliddinovich",
+                "image": "/data/employee_images/E_12.jpg",
+                "jobTitle": "Auditor",
+                "description": "'The winner of the 2023 Best 'Internal Auditor Republican Competition', holding both «External and internal auditor» qualification certificates, is recognized as an international-class auditor."
+            }
+        ],
+        "achievements_title": "Achienvements",
+        "achievements": []
+    },
+    "services": {
+        "title": "Our services",
+        "description": "Provides audit services in the form of audit checks and other audit services.",
+        "items": [
+            "Advice on the application of tax legislation, calculations on taxes and fees, drawing up declarations",
+            "Analysis of financial and economic activities and financial planning, including preparation of business plans, economic, financial advice and management advice.",
+            "Automation of accounting and financial reporting, development of recommendations for information security of financial information.",
+            "Organization of accounting, restoration, maintenance and formation of financial statements, including financial statements on International Financial Reporting Standards",
+            "Accounting law and financial reporting",
+            "Audit Commission of a legal entity (reviser), implementation of the duties of a trustee of investment assets"
+        ]
+    },
+    "news": {
+        "title": "News"
+    },
+    "contact": {},
+    "vacancy": {}
+}

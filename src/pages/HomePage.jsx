@@ -14,6 +14,13 @@ import { Play } from "lucide-react";
 // CPOMPONENTS
 import ImageLoad from "../components/ImageLoad.jsx"
 import SliderTrack from "../components/SliderTrack.jsx";
+import NewsCard from "../components/NewsCard.jsx";
+
+
+
+
+
+
 
 
 
@@ -56,7 +63,6 @@ import P21 from "../assets/partners/p21.png";
 import P22 from "../assets/partners/p22.png";
 import P23 from "../assets/partners/p23.png";
 import P24 from "../assets/partners/p24.png";
-import NewsCard from "../components/NewsCard.jsx";
 
 const PARTNER_LOGOS = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, P17, P18, P19, P20, P21, P22, P23, P24];
 
@@ -73,8 +79,6 @@ function shuffleArray(array) {
 export default function HomePage({ translations }) {
   const { data } = useLanguage();
 
-  const t = translations || {};
-  const content = t.home_content || {};
   const [showModal, setShowModal] = useState(false);
   const videoRef = useRef(null);
   const [logos1, setLogos1] = useState(shuffleArray(PARTNER_LOGOS));
@@ -126,7 +130,7 @@ export default function HomePage({ translations }) {
             lg:text-[2rem]
             sm:text-[1.4rem]
           ">
-            {content.heroText || null}
+            {translations.home.banner || "No Text"}
           </h1>
         </div>
 
@@ -152,7 +156,7 @@ export default function HomePage({ translations }) {
           lg:flex lg:flex-row
         ">
 
-          {content.heroAbout ? content.heroAbout?.map((item, index) => (
+          {translations.home.card_info ? translations.home.card_info?.map((item, index) => (
             <div key={index} className="flex-col h-[120px] w-full border border-[#eee] rounded shadow-[0_0_30px_#3b3d3f10] flex justify-center items-center transition-[background-color] duration-[var(--trans)] px-8 py-4 border-solid bg-white">
 
               <h2 className="text-[1.1rem] text-center uppercase text-[color:var(--light-medium)] font-extralight mb-[15px]">{item.title}</h2>
@@ -172,16 +176,16 @@ export default function HomePage({ translations }) {
         ================================================
       */}
       <section className="mt-16 px-4 py-0 maxWidth">
-        <h2 className="sec-title">{content.aboutTitle || null}</h2>
+        <h2 className="sec-title">{translations.home.about_company_title || null}</h2>
         <div className="flex gap-8 justify-between
               flex-col
               lg:flex-row lg:gap-4
               sm:flex-col sm:gap-8
           ">
           <div>
-            {content.aboutText ? <p
+            {translations.home.about_company ? <p
               className="max-w-[650px] font-light text-[color:var(--txt-light)] text-base leading-[var(--txt-space)]"
-              dangerouslySetInnerHTML={{ __html: content.aboutText }} /> : null}
+              dangerouslySetInnerHTML={{ __html: translations.home.about_company }} /> : null}
           </div>
           <div className="relative after:content-[''] after:absolute after:w-full after:h-full after:bg-[color:var(--overlay-background)] after:opacity-60 after:rounded-[20px] after:left-0 after:top-0
             w-full h-[250px]
@@ -266,32 +270,32 @@ export default function HomePage({ translations }) {
       */}
 
       <section className="home-principles">
-        <h2 className="sec-title maxWidth">{content.companyTitle || null}</h2>
+        <h2 className="sec-title maxWidth">{translations.home.principles_title || "No data"}</h2>
         <div className="block">
           <div className="maxWidth">
             <ul>
               <li>
                 <div className="list">
-                  <img alt={content.companyPrinciples[0] || null} src={Dove} />
+                  <img alt={translations.home.principle1 || ""} src={Dove} />
                 </div>
-                <p className="principles-txt">{content.companyPrinciples[0] || null}</p>
+                <p className="principles-txt">{translations.home.principle1 || null}</p>
               </li>
               <li>
                 <div className="list">
-                  <img alt={content.companyPrinciples[1] || null} src={Scales} />
-                </div><p className="principles-txt">{content.companyPrinciples[1] || null}</p>
+                  <img alt={translations.home.principle2 || null} src={Scales} />
+                </div><p className="principles-txt">{translations.home.principle2 || null}</p>
               </li>
               <li>
                 <div className="list">
-                  <img alt={content.companyPrinciples[2] || null} src={Learning} />
+                  <img alt={translations.home.principle3 || null} src={Learning} />
                 </div>
-                <p className="principles-txt">{content.companyPrinciples[2] || null}</p>
+                <p className="principles-txt">{translations.home.principle3 || null}</p>
               </li>
               <li>
                 <div className="list">
-                  <img alt={content.companyPrinciples[3] || null} src={Security} />
+                  <img alt={translations.home.principle4 || null} src={Security} />
                 </div>
-                <p className="principles-txt">{content.companyPrinciples[3] || null}</p>
+                <p className="principles-txt">{translations.home.principle4 || null}</p>
               </li>
             </ul>
           </div>
@@ -305,13 +309,13 @@ export default function HomePage({ translations }) {
         ================================================
       */}
       <section className="maxWidth px-4">
-        <h2 className="sec-title">{content.partnerTitle || null}</h2>
+        <h2 className="sec-title">{translations.home.partners_title || null}</h2>
         <div className="grid gap-4">
 
           <SliderTrack speed={80}>
             {logos1.map((logo, index) => (
               <div className="w-[150px] sm:w-[150px] lg:w-[200px]" key={index}>
-                <ImageLoad imgSrc={logo} imgAlt={index + 1}/>
+                <ImageLoad imgSrc={logo} imgAlt={index + 1} />
               </div>
             ))}
           </SliderTrack>
@@ -334,7 +338,7 @@ export default function HomePage({ translations }) {
         ================================================
       */}
       <section className="news maxWidth">
-        <h2 className="sec-title maxWidth">{content.newsTitle || null}</h2>
+        <h2 className="sec-title maxWidth">{translations.home.news_title || null}</h2>
 
         <div className="news-component">
           <div className="items">

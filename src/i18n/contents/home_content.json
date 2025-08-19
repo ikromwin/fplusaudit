@@ -1,7 +1,7 @@
 {
     "en_US": {
         "logoSubtitle": "Auditor organization",
-        "heroText": "Providing auditing and professional consulting services to help grow your business as it expands.",
+        "heroText": "",
         "heroAbout": [
             {
                 "title": "Employees",
@@ -30,7 +30,7 @@
     },
     "ru_RU": {
         "logoSubtitle": "Аудиторская организация",
-        "heroText": "Аудиторские и профессиональные консалтинговые услуги для развития бизнеса",
+        "heroText": "",
         "heroAbout": [
             {
                 "title": "Сотрудники",
@@ -59,7 +59,7 @@
     },
     "uz_UZ": {
         "logoSubtitle": "Auditorlik tashkiloti",
-        "heroText": "Biznesni to’g’ri yo’lga qo’yish uchun auditorlik tekshiruvi va professional konsalting xizmatlari",
+        "heroText": "",
         "heroAbout": [
             {
                 "title": "Hodimlarimiz",

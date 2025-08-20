@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import { i18n } from "../i18n/data";
+import { achievements } from "../i18n/achievements";
 import { translations } from "../i18n/index";
 
 const LanguageContext = createContext();
@@ -27,8 +27,7 @@ export function LanguageProvider({ children }) {
             setLang(newLang);
             setTimeout(() => setLoading(false), 800);
         },
-        content: i18n[lang]?.CONTENT || i18n[defaultLanguage].CONTENT,
-        data: i18n[lang]?.DATA || i18n[defaultLanguage].DATA,
+        achievements: achievements,
         translations: translations[lang],
         loading,
     };

@@ -1,17 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-
-
-
-// THIRD PARTY
 import { Loader } from "lucide-react";
-
 
 export default function ImageLoad({ imgSrc, imgAlt }) {
     const [imgLoaded, setImgLoaded] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
     const imgRef = useRef(null);
-
-
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -19,7 +12,7 @@ export default function ImageLoad({ imgSrc, imgAlt }) {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         setIsVisible(true);
-                        observer.disconnect();
+                        observer.unobserve(entry.target);
                     }
                 });
             },
@@ -36,23 +29,25 @@ export default function ImageLoad({ imgSrc, imgAlt }) {
     return (
         <div
             ref={imgRef}
-            className={`relative flex items-center justify-center w-full h-full  rounded-lg`}
+            className="relative flex items-center justify-center w-full h-full rounded-lg"
         >
-            {
-                isVisible ?
-                    <>
-                        {!imgLoaded && <Loader className="animate-spin" color="#888" size={20} strokeWidth={2.25} />}
-                        <img
-                            className={`transition-opacity duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"}`}
-                            src={imgSrc}
-                            alt={imgAlt}
-                            onLoad={() => setImgLoaded(true)}
-                            onError={() => setImgLoaded(true)}
-                        />
-                    </>
-                    :
-                    <Loader className="animate-spin" color="#888" strokeWidth={2.25} size={20} />
-            }
+            {isVisible ? (
+                <>
+                    {!imgLoaded && (
+                        <Loader className="animate-spin" color="#888" size={20} strokeWidth={2.25} />
+                    )}
+                    <img
+                        src={imgSrc}
+                        alt={imgAlt}
+                        className={`transition-opacity duration-500 ${imgLoaded ? "opacity-100" : "opacity-0"
+                            }`}
+                        onLoad={() => setImgLoaded(true)}
+                        onError={() => setImgLoaded(true)}
+                    />
+                </>
+            ) : (
+                <Loader className="animate-spin" color="#888" strokeWidth={2.25} size={20} />
+            )}
         </div>
-    )
+    );
 }

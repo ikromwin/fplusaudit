@@ -2,13 +2,12 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Linetitle from "../components/LineTitleComponent";
 
-import AchievementFullData from "../i18n/data/achievemenets_full_data.json"
-import AchievementCategory from "../i18n/data/achievements_category_data.json"
+import AchievementFullData from "../i18n/data/achievemenets.json"
+import AchievementCategory from "../i18n/data/category.json"
 
 
 export default function About({ translations, lang }) {
     const [data, setData] = useState([]);
-    const t = translations
     const { id } = useParams();
 
 
@@ -28,8 +27,8 @@ export default function About({ translations, lang }) {
             <table>
                 <thead>
                     <tr>
-                        <th>{t.about_table_name}</th>
-                        <th>{t.about_table_years}</th>
+                        <th>{translations.table_name}</th>
+                        <th>{translations.table_years}</th>
                     </tr>
                 </thead>
                 <tbody>

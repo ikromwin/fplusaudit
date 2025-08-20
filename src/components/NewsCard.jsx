@@ -9,16 +9,16 @@ function NewsCard({ imgSrc, title, date, href }) {
             lg:flex
             sm:grid
             ">
-            <div className="w-full min-w-[200px] bg-[#eee] rounded-xl overflow-hidden">
+            <div className="w-full min-w-[200px] max-w-[200px] max bg-[#eee] rounded-xl overflow-hidden">
                 <ImageLoad imgSrc={imgSrc} imgAlt={title} />
             </div>
 
             <div className="card-text">
                 <h3 className="font-extralight text-[color:var(--main)] text-base leading-[var(--txt-space)] mb-4" title={title}>{title.length > 90 ? title.slice(0, 90) + ".." : title}</h3>
 
-                <p className="transition group-hover:bg-[blue] group-hover:text-white inline-flex items-center gap-0.5 border border-[color:var(--grey)] px-2 py-[0.3rem] rounded-lg border-solid">
+                <p className="transition group-hover:bg-[#eee] inline-flex items-center gap-0.5 border border-[color:var(--grey)] px-2 py-[0.3rem] rounded-lg border-solid">
                     <CalendarDays size={16} color="#999" />
-                    <span className="group-hover:text-white opacity-60 text-[13px] text-[color:var(--txt-light)] font-normal ml-1.5">{date}</span>
+                    <span className="group-hover:opacity-100 opacity-60 text-[13px] text-[color:var(--txt-light)] font-normal ml-1.5">{date}</span>
                 </p>
             </div>
         </Link>

@@ -1,19 +1,17 @@
-import { useLanguage } from "../../context/languageContext.jsx";
+
 import Linetitle from "../../components/LineTitleComponent";
 import NewsCard from "../../components/NewsCard.jsx";
 
 export default function NewsList({ translations }) {
-    const t = translations
-    const { data } = useLanguage();
 
 
     return (
         <div className="page__news maxWidth">
-            <Linetitle title={t.news || null}></Linetitle>
+            <Linetitle title={translations.news.title || null}></Linetitle>
 
             <div className="news-component">
                 <div className="items">
-                    {data.news && data.news.length > 0 ? data.news.map((newsItem, index) => (
+                    {translations.news.news && translations.news.news.length > 0 ? translations.news.news.map((newsItem, index) => (
                         <NewsCard
                             key={index}
                             imgSrc={newsItem.image || Thumbnail}
@@ -21,7 +19,7 @@ export default function NewsList({ translations }) {
                             date={newsItem.date || "No date available"}
                             href={`/news/${newsItem.id}`}
                         />
-                    )) : <null />}
+                    )) : null}
                 </div>
             </div>
 

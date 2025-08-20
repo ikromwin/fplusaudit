@@ -1,6 +1,9 @@
 {
     "__name": "English",
     "common": {},
+    "buttons": {
+        "return_button": "Go back"
+    },
     "navbar": {
         "logo_subtitle": "Auditor organization",
         "home": "Home",
@@ -136,8 +139,11 @@
                 "description": "'The winner of the 2023 Best 'Internal Auditor Republican Competition', holding both «External and internal auditor» qualification certificates, is recognized as an international-class auditor."
             }
         ],
-        "achievements_title": "Achienvements",
-        "achievements": []
+        "achievements_title": "Achienvements"
+    },
+    "gallery": {
+        "title": "Gallery",
+        "number_of_photos": "Photos"
     },
     "services": {
         "title": "Our services",
@@ -152,7 +158,16 @@
         ]
     },
     "news": {
-        "title": "News"
+        "title": "News",
+        "news": [
+            {
+                "id": 1,
+                "title": "On April 10, 2024, a round table was held with the audit organization 'F-PLUS AUDIT' with professors and teachers of the 'audit' Department of Tashkent State University of Economics.",
+                "image": "/data/news_images/N_1.jpg",
+                "content": "Within the framework of 5 important initiatives put forward by the president of the Republic of Uzbekistan, it is important to carry out measures on the broad involvement of the younger generation in culture, art, physical education and sports, the formation of the skills of proper use of Information Technology in them, the promotion of reading among young people, the provision of women's employment. The third initiative, promoted by our president, is aimed at organizing the effective use of computer technology and the internet among the population and young people. Within the framework of this initiative, professors and teachers of the 'audit' Department of Tashkent State University of Economics A.Avlokulov, M.Khayitboev and o.A round table of the audit organization 'F-PLUS AUDIT' was held by Qushmatov on April 10, 2024. One of the main requirements imposed by auditing services customers today is to ensure that these services are carried out on a qualitative, short-term basis, without interfering with the activities of the enterprise (without impact) and on a low-cost basis. In turn, in order to ensure the fulfillment of the above requirements by audit organizations, it is required to have specialists with knowledge and experience in the areas of accounting, economic analysis and audit, to perform such important tasks as setting up the provision of audit services using modern software tools (AuditNET, ITAUDIT:Auditor, AUDITXP 'complex audit', Express audit:PROF, Auditsoft, Audit sampling, First-audit and Voyager), During the round table, professor of the Department of audit A.Avlokulov gave information on the effectiveness of software and their use, which are widely used in world countries in the field of accounting and audit. At the end of the Round Table, young specialists were instructed to use the software.",
+                "date": "October 28, 2024"
+            }
+        ]
     },
     "contact": {
         "title": "Do you have any questions?",

@@ -28,14 +28,15 @@ import NewsList from './pages/news/NewsList';
 import NewsDetails from './pages/news/NewsDetails';
 import Contact from './pages/Contact';
 import Vacancy from './pages/Vacancy';
-import GalleryPage from "./pages/GalleryPage";
+import GalleryPage from "./pages/gallery/GalleryPage";
+import GalleryDetailPage from "./pages/gallery/GalleryDetailPage";
 
 
 
 
 
 function App() {
-    const { content, lang, translations } = useLanguage();
+    const { achievements, lang, translations } = useLanguage();
     const location = useLocation();
 
     return (
@@ -50,7 +51,6 @@ function App() {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.3 }}
                 >
-                    {/* <ScrollToTop /> */}
 
                     <AnimatePresence mode="wait">
                         <Routes location={location} key={location.pathname}>
@@ -60,15 +60,19 @@ function App() {
                             />
                             <Route
                                 path="/about"
-                                element={<About contentе={content} translations={translations} />}
+                                element={<About translations={translations} />}
                             />
                             <Route
                                 path="/about/:id"
-                                element={<AboutDetails translations={content} lang={lang} />}
+                                element={<AboutDetails translations={achievements} lang={lang} />}
                             />
                             <Route
-                                path="/about/gallery"
-                                element={<GalleryPage translations={content} />}
+                                path="/about/gallery/"
+                                element={<GalleryPage translations={translations} lang={lang} />}
+                            />
+                            <Route
+                                path="/about/gallery/:id"
+                                element={<GalleryDetailPage translations={translations} lang={lang} />}
                             />
                             <Route
                                 path="/services"
@@ -76,11 +80,11 @@ function App() {
                             />
                             <Route
                                 path="/news"
-                                element={<NewsList translations={content} />}
+                                element={<NewsList translations={translations} />}
                             />
                             <Route
                                 path="/news/:id"
-                                element={<NewsDetails translations={content} />}
+                                element={<NewsDetails translations={translations} />}
                             />
                             <Route
                                 path="/contact"
@@ -92,9 +96,6 @@ function App() {
                             />
                         </Routes>
                     </AnimatePresence>
-
-
-
 
                     <Footer translations={translations}></Footer>
                 </motion.div>

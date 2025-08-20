@@ -37,34 +37,8 @@ import Video from "../assets/video.mp4";
 
 
 
+const partnersImages = Object.values(import.meta.glob("/src/assets/partners/*.{jpg,jpeg,png,svg}", { eager: true })).map((m) => m.default)
 
-
-import P1 from "../assets/partners/p1.png";
-import P2 from "../assets/partners/p2.png";
-import P3 from "../assets/partners/p3.png";
-import P4 from "../assets/partners/p4.png";
-import P5 from "../assets/partners/p5.png";
-import P6 from "../assets/partners/p6.png";
-import P7 from "../assets/partners/p7.png";
-import P8 from "../assets/partners/p8.png";
-import P9 from "../assets/partners/p9.png";
-import P10 from "../assets/partners/p10.png";
-import P11 from "../assets/partners/p11.png";
-import P12 from "../assets/partners/p12.png";
-import P13 from "../assets/partners/p13.png";
-import P14 from "../assets/partners/p14.png";
-import P15 from "../assets/partners/p15.png";
-import P16 from "../assets/partners/p16.png";
-import P17 from "../assets/partners/p17.png";
-import P18 from "../assets/partners/p18.png";
-import P19 from "../assets/partners/p19.png";
-import P20 from "../assets/partners/p20.png";
-import P21 from "../assets/partners/p21.png";
-import P22 from "../assets/partners/p22.png";
-import P23 from "../assets/partners/p23.png";
-import P24 from "../assets/partners/p24.png";
-
-const PARTNER_LOGOS = [P1, P2, P3, P4, P5, P6, P7, P8, P9, P10, P11, P12, P13, P14, P15, P16, P17, P18, P19, P20, P21, P22, P23, P24];
 
 function shuffleArray(array) {
   const arr = array.slice();
@@ -77,12 +51,8 @@ function shuffleArray(array) {
 
 
 export default function HomePage({ translations }) {
-  const { data } = useLanguage();
-
   const [showModal, setShowModal] = useState(false);
   const videoRef = useRef(null);
-  const [logos1, setLogos1] = useState(shuffleArray(PARTNER_LOGOS));
-  const [logos2, setLogos2] = useState(shuffleArray(PARTNER_LOGOS));
 
   const handlePlayClick = () => {
     setShowModal(true);
@@ -110,12 +80,6 @@ export default function HomePage({ translations }) {
       document.body.style.overflow = "";
     };
   }, [showModal]);
-
-  useEffect(() => {
-    // Shuffle logos every time the component mounts
-    setLogos1(shuffleArray(PARTNER_LOGOS));
-    setLogos2(shuffleArray(PARTNER_LOGOS));
-  }, []);
 
   return (
     <main>
@@ -313,7 +277,7 @@ export default function HomePage({ translations }) {
         <div className="grid gap-4">
 
           <SliderTrack speed={80}>
-            {logos1.map((logo, index) => (
+            {partnersImages.slice(0, partnersImages.length / 2).map((logo, index) => (
               <div className="w-[150px] sm:w-[150px] lg:w-[200px]" key={index}>
                 <ImageLoad imgSrc={logo} imgAlt={index + 1} />
               </div>
@@ -321,7 +285,7 @@ export default function HomePage({ translations }) {
           </SliderTrack>
 
           <SliderTrack reverse={true} speed={80}>
-            {logos1.map((logo, index) => (
+            {partnersImages.slice(partnersImages.length / 2, partnersImages.length).map((logo, index) => (
               <div className="w-[150px] sm:w-[150px] lg:w-[200px]" key={index}>
                 <ImageLoad imgSrc={logo} imgAlt={index + 1} />
               </div>
@@ -337,21 +301,19 @@ export default function HomePage({ translations }) {
         ================ NEWS SECTION ==================
         ================================================
       */}
-      <section className="news maxWidth">
-        <h2 className="sec-title maxWidth">{translations.home.news_title || null}</h2>
+      <section className="news maxWidth px-4">
+        <h2 className="sec-title maxWidth">{translations.news.title || null}</h2>
 
         <div className="news-component">
           <div className="items">
-            {data.news && data.news.length > 0 ? data.news.map((newsItem, index) => (
-              <>
-                <NewsCard
-                  key={index}
-                  imgSrc={newsItem.image || Thumbnail}
-                  title={newsItem.title || "No data"}
-                  date={newsItem.date || "No date"}
-                  href={`/news/${newsItem.id}`}
-                />
-              </>
+            {translations.news.news && translations.news.news.length > 0 ? translations.news.news.map((newsItem, index) => (
+              <NewsCard
+                key={index}
+                imgSrc={newsItem.image || Thumbnail}
+                title={newsItem.title || "No title available"}
+                date={newsItem.date || "No date available"}
+                href={`/news/${newsItem.id}`}
+              />
             )) : null}
           </div>
         </div>

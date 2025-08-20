@@ -10,7 +10,7 @@ import BlackLogo from "../assets/logo-black.svg";
 import { NavLink } from "react-router-dom";
 
 // DATA
-import AchievementCategory from "../i18n/data/achievements_category_data.json";
+import AchievementCategory from "../i18n/data/category.json";
 import { languages } from "../i18n/index";
 
 // STYLE
@@ -200,31 +200,30 @@ export default function Header() {
                             </div>
 
                             <div className="responsive-achievements-links">
-                                <h1 className="title">{content.achievements_title}</h1>
+
                                 <div className="responsive-achievements">
+                                    <NavLink
+                                        to="/about/gallery"
+                                        className={({ isActive }) =>
+                                            isActive ? "dropdown-button active" : "dropdown-button"
+                                        }
+                                    >
+                                        {translations.navbar.about_dropdown.team_photos}
+                                    </NavLink>
+                                    
                                     {AchievementCategory[lang].map((dropItem, dropIndex) => (
-                                        <>
-                                            <NavLink
-                                                to="/about/gallery"
-                                                className={({ isActive }) =>
-                                                    isActive ? "dropdown-button active" : "dropdown-button"
-                                                }
-                                            >
-                                                {translations.navbar.about_dropdown.team_photos}
-                                            </NavLink>
-                                            <NavLink
-                                                key={dropIndex}
-                                                to={`/about/${dropItem.id}`}
-                                                onClick={() => setIsOpen(!isOpen)}
-                                                className={({ isActive }) =>
-                                                    isActive
-                                                        ? "responsive-dropdown-button active"
-                                                        : "responsive-dropdown-button"
-                                                }
-                                            >
-                                                {dropItem.title}
-                                            </NavLink>
-                                        </>
+                                        <NavLink
+                                            key={dropIndex}
+                                            to={`/about/${dropItem.id}`}
+                                            onClick={() => setIsOpen(!isOpen)}
+                                            className={({ isActive }) =>
+                                                isActive
+                                                    ? "responsive-dropdown-button active"
+                                                    : "responsive-dropdown-button"
+                                            }
+                                        >
+                                            {dropItem.title}
+                                        </NavLink>
                                     ))}
                                 </div>
                             </div>

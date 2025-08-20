@@ -1,6 +1,8 @@
 {
     "__name": "Uzbek",
-    "common": {},
+    "buttons": {
+        "return_button": "Ortga qaytish"
+    },
     "navbar": {
         "logo_subtitle": "Auditorlik tashkiloti",
         "home": "Bosh sahifa",
@@ -136,8 +138,11 @@
                 "description": "2023-yil 'Eng yaxshi ichki auditor' Respublika tanlovi g'olibi va 'Tashqi auditor va ichki auditor' malaka sertifikatlari egasi xalqaro toifadagi auditor."
             }
         ],
-        "achievements_title": "Yutuqlarimiz",
-        "achievements": null
+        "achievements_title": "Yutuqlarimiz"
+    },
+    "gallery": {
+        "title": "Rasmalar",
+        "number_of_photos": "Rasmlar soni"
     },
     "services": {
         "title": "Bizning xizmatlarimiz",
@@ -152,7 +157,16 @@
         ]
     },
     "news": {
-        "title": "Yangiliklar"
+        "title": "Yangiliklar",
+        "news": [
+            {
+                "id": 1,
+                "title": "2024 yil 10 aprelda 'F-PLUS AUDIT' auditorlik tashkiloti bilan Toshkent davlat iqtisodiyot universiteti 'audit' kafedrasi professor-o'qituvchilari bilan davra suhbati o'tkazildi.",
+                "image": "/data/news_images/N_1.jpg",
+                "content": "O'zbekiston Respublikasi Prezidenti tomonidan ilgari surilgan 5 ta muhim tashabbus doirasida yosh avlodni madaniyat, san'at, jismoniy tarbiya va sportga keng jalb etish, ularda axborot texnologiyalaridan to'g'ri foydalanish ko'nikmasini shakllantirish, yoshlar orasida kitobxonlikni targ'ib qilish, xotin-qizlar bandligini ta'minlash yuzasidan chora-tadbirlarni amalga oshirish muhim hisoblanadi. Prezidentimiz tomonidan ilgari surilgan uchinchi tashabbus aholi va yoshlar o'rtasida kompyuter texnologiyalari va internetdan samarali foydalanishni tashkil etishga qaratilgan. Ushbu tashabbus doirasida Toshkent davlat iqtisodiyot universiteti 'audit' kafedrasi professor-o'qituvchilari A.Avlokulov, M.Xayitboev va o.Qushmatov tomonidan 2024 yil 10 aprelda 'F-PLUS AUDIT' auditorlik tashkiloti davra suhbati o'tkazildi. Bugungi kunda auditorlik xizmatlari buyurtmachilari tomonidan qo'yiladigan asosiy talablardan biri bu mazkur xizmatlarni sifatli, qisqa muddatda, korxona faoliyatiga xalaqit bermasdan (ta'sir ko'rsatmasdan) va kamxarajatli asosda amalga oshirilishini ta'minlashdan iboratdir. O'z navbatida auditorlik tashkilotlari tomonidan yuqoridagi talablar bajarilishini ta'minlash uchun esa buxgalteriya hisobi, iqtisodiy tahlil va audit sohalari bo'yicha bilim va tajribaga ega mutaxassislarga ega bo'lish, auditorlik xizmatlarini zamonaviy dasturiy ta'minot vositalari (AuditNET, ITAUDIT:Auditor, AUDITXP 'Kompleks audit', Express audit:PROF, Auditsoft, Audit sampling, First-audit va Voyager)dan foydalangan holda ko'rsatishni yo'lga qo'yish, auditorlik xizmatlarini ko'rsatishda kamxarajat usul hamda vositalardan foydalanish kabi muhim vazifalarni bajarish talab etiladi. Davra suhbati davomida 'audit' kafedrasi professori A.Avlokulov tomonidan buxgalteriya hisobi va audit sohasida jahon mamlakatlarida keng qo'llanilayotgan dasturiy ta'minotlar va ulardan foydalanish samaradorligi xususida axborotlar berildi. Davra suhbati yakunida yosh mutaxassislarga dasturiy ta'minotlardan foydalanish bo'yicha ko'rsatmalar berildi.",
+                "date": "28-Oktrabr, 2024-y"
+            }
+        ]
     },
     "contact": {
         "title": "Savolingiz bo'lsa yozib qoldiring.",

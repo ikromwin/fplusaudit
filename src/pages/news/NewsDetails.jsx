@@ -1,20 +1,20 @@
-import { NavLink, useParams } from "react-router-dom";
-import { useLanguage } from "../../context/languageContext";
+import { Link, useParams } from "react-router-dom";
 import Linetitle from "../../components/LineTitleComponent";
 import { ArrowLeft, CalendarDays } from "lucide-react";
 
 
 
-export default function NewsList({ language }) {
-    const { data, content } = useLanguage();
-    console.log("DATA", data);
+export default function NewsList({ translations }) {
     const { id } = useParams();
-    const newsDetails = data.news?.find((item) => item.id.toString() === id.toString());
+
+    const newsDetails = translations.news?.news?.find((item) => item.id.toString() === id.toString());
+
+    console.log(newsDetails);
 
 
 
     return (
-        <div className="page__newsDetails maxWidth">
+        <div className="page__newsDetails px-4 maxWidth">
             <Linetitle title={newsDetails?.title} />
 
             <div className="newsDetails-photo">
@@ -22,12 +22,12 @@ export default function NewsList({ language }) {
             </div>
 
             <div className="newsDetails-utils">
-                <div className="goBack">
-                    <NavLink to={"/news"}>
-                        <ArrowLeft size={18} strokeWidth={1.5} />
-                        <span>{content.goBack}</span>
-                    </NavLink>
-                </div>
+                <Link to={"/news/"} className="inline-flex items-center mb-8 text-[#ccc] active:scale-95  font-semibold text-sm gap-2 hover:text-[#3c42c8]">
+                    <ArrowLeft size={18} strokeWidth={1.5} />
+                    <span>{translations.buttons.return_button}</span>
+                </Link>
+
+
                 <p className="date">
                     <CalendarDays size={16} color="var(--txt-light)" />
 

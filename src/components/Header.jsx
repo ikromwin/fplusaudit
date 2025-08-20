@@ -73,15 +73,6 @@ export default function Header() {
 
                                     {/* Dropdown */}
                                     <div className="dropdown hidden group-hover:grid">
-                                        <NavLink
-                                            to="/about/gallery"
-                                            className={({ isActive }) =>
-                                                isActive ? "dropdown-button active" : "dropdown-button"
-                                            }
-                                        >
-                                            {translations.navbar.about_dropdown.team_photos}
-                                        </NavLink>
-
                                         {AchievementCategory[lang].map((dropItem, dropIndex) => (
                                             <NavLink
                                                 key={dropIndex}
@@ -93,6 +84,14 @@ export default function Header() {
                                                 {dropItem.title}
                                             </NavLink>
                                         ))}
+                                        <NavLink
+                                            to="/about/gallery"
+                                            className={({ isActive }) =>
+                                                isActive ? "dropdown-button active" : "dropdown-button"
+                                            }
+                                        >
+                                            {translations.navbar.about_dropdown.team_photos}
+                                        </NavLink>
                                     </div>
                                 </div>
                             )
@@ -202,15 +201,7 @@ export default function Header() {
                             <div className="responsive-achievements-links">
 
                                 <div className="responsive-achievements">
-                                    <NavLink
-                                        to="/about/gallery"
-                                        className={({ isActive }) =>
-                                            isActive ? "dropdown-button active" : "dropdown-button"
-                                        }
-                                    >
-                                        {translations.navbar.about_dropdown.team_photos}
-                                    </NavLink>
-                                    
+
                                     {AchievementCategory[lang].map((dropItem, dropIndex) => (
                                         <NavLink
                                             key={dropIndex}
@@ -225,6 +216,15 @@ export default function Header() {
                                             {dropItem.title}
                                         </NavLink>
                                     ))}
+
+                                    <NavLink
+                                        to="/about/gallery"
+                                        className={({ isActive }) =>
+                                            isActive ? "dropdown-button active" : "dropdown-button"
+                                        }
+                                    >
+                                        {translations.navbar.about_dropdown.team_photos}
+                                    </NavLink>
                                 </div>
                             </div>
 

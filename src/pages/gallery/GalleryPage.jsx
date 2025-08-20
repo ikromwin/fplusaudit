@@ -55,7 +55,7 @@ function GalleryPage({ translations, lang }) {
                             <Link
                                 to={`/about/gallery/${collection.id}`}
                             >
-                                <h2 className="md:text-lg text-md sm:text-md text-[#3c42c8] hover:underline mb-2">{collection[lang].title}</h2>
+                                {/* <h2 className="md:text-lg text-md sm:text-md text-[#3c42c8] hover:underline mb-2">{collection[lang].title}</h2> */}
                                 <p className="text-sm opacity-30">{translations.gallery.number_of_photos} ({collection.photos.length})</p>
                             </Link>
                         </div>

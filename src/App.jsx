@@ -51,6 +51,7 @@ function App() {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.3 }}
                 >
+                    <ScrollToTop />
 
                     <AnimatePresence mode="wait">
                         <Routes location={location} key={location.pathname}>

@@ -24,8 +24,10 @@ export default function About({ сontentе, translations }) {
         <div className="items">
           {translations.about.employees.map(item =>
             <div className="item" key={item.id}>
-              <div className="bg-[#eee] rounded-lg min-w-[150px] max-w-[150px] overflow-hidden flex items-center justify-center h-[150px] p-2">
-                <ImageLoad imgSrc={item.image} alt={item.name} width={"100%"} height={"100%"} />
+              <div className="bg-[#eee] w-[150px] min-w-[150px] h-[150px] rounded-lg  bg-[#eee] p-2">
+                <div className="overflow-hidden bg-[#eee] h-full w-full flex justify-center items-center rounded-lg">
+                  <ImageLoad imgSrc={item.image} alt={item.name} className="w-full h-full object-cover object-top" />
+                </div>
               </div>
 
               <div className="aboutUs-info">
@@ -47,8 +49,8 @@ export default function About({ сontentе, translations }) {
         <div className="block maxWidth">
           <SliderTrack speed={20} >
             {Object.values(images).map((image, index) => (
-              <div className="flex-[0_0_300px] min-h-[150px] overflow-hidden rounded-lg ml-2.5 bg-[#eee]" key={index}>
-                <ImageLoad imgSrc={image} alt={"Achievement"} />
+              <div className="flex-[0_0_200px] lg:flex-[0_0_300px] sm:flex-[0_0_200px] h-[150px] sm:h-[150px] lg:h-[250px] rounded-lg flex justify-center items-center ml-2.5 bg-[#eee]" key={index}>
+                <ImageLoad imgSrc={image} alt={"Achievement"} className="w-full h-full object-cover rounded-lg" />
               </div>
             ))}
           </SliderTrack>

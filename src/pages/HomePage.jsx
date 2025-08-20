@@ -278,16 +278,16 @@ export default function HomePage({ translations }) {
 
           <SliderTrack speed={80}>
             {partnersImages.slice(0, partnersImages.length / 2).map((logo, index) => (
-              <div className="w-[150px] sm:w-[150px] lg:w-[200px]" key={index}>
-                <ImageLoad imgSrc={logo} imgAlt={index + 1} />
+              <div className="w-[150px] min-h-[100px] sm:w-[150px] lg:w-[200px] flex justify-center items-center" key={index}>
+                <ImageLoad imgSrc={logo} imgAlt={index + 1} className="w-full h-full" />
               </div>
             ))}
           </SliderTrack>
 
           <SliderTrack reverse={true} speed={80}>
             {partnersImages.slice(partnersImages.length / 2, partnersImages.length).map((logo, index) => (
-              <div className="w-[150px] sm:w-[150px] lg:w-[200px]" key={index}>
-                <ImageLoad imgSrc={logo} imgAlt={index + 1} />
+              <div className="w-[150px] min-h-[100px] sm:w-[150px] lg:w-[200px] flex justify-center items-center" key={index}>
+                <ImageLoad imgSrc={logo} imgAlt={index + 1} className="w-full h-full" />
               </div>
             ))}
           </SliderTrack>

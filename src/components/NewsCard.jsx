@@ -9,8 +9,8 @@ function NewsCard({ imgSrc, title, date, href }) {
             lg:flex
             sm:grid
             ">
-            <div className="w-full min-w-[200px] max-w-[200px] max bg-[#eee] rounded-xl overflow-hidden">
-                <ImageLoad imgSrc={imgSrc} imgAlt={title} />
+            <div className="w-full min-w-[200px] min-h-[100px] h-[130px] flex justify-center items-center max bg-[#eee] rounded-xl overflow-hidden">
+                <ImageLoad imgSrc={imgSrc} imgAlt={title} className="w-full h-full"/>
             </div>
 
             <div className="card-text">

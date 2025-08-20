@@ -1,9 +1,10 @@
 import { Link, useParams } from "react-router-dom";
 import Masonry from "react-masonry-css";
+import { ArrowLeft } from "lucide-react";
 
 import { galleryData } from "../../i18n/galleryData.js";
 import Linetitle from "../../components/LineTitleComponent.jsx";
-import { ArrowLeft } from "lucide-react";
+import ImageLoad from "../../components/ImageLoad.jsx";
 
 
 function GalleryDetailPage({ translations, lang }) {
@@ -13,6 +14,7 @@ function GalleryDetailPage({ translations, lang }) {
     if (!collection) {
         return <p className="p-6 text-red-500">Collection not found.</p>;
     }
+
     const breakpointColumnsObj = {
         default: 5,
         1100: 4,
@@ -23,11 +25,15 @@ function GalleryDetailPage({ translations, lang }) {
     return (
         <div className="px-4 maxWidth">
             <Linetitle title={collection[lang].title} />
+
             <div className="mb-8 bg-[#eee] p-3 px-4">
                 <p className="text-md text-[#696969]">{collection[lang].description}</p>
             </div>
 
-            <Link to={"/about/gallery/"} className="inline-flex items-center mb-8 text-[#ccc] active:scale-95  font-semibold text-sm gap-2 hover:text-[#3c42c8]">
+            <Link
+                to={"/about/gallery/"}
+                className="inline-flex items-center mb-8 text-[#ccc] active:scale-95 font-semibold text-sm gap-2 hover:text-[#3c42c8]"
+            >
                 <ArrowLeft size={18} strokeWidth={1.5} />
                 <span>{translations.buttons.return_button}</span>
             </Link>
@@ -37,13 +43,22 @@ function GalleryDetailPage({ translations, lang }) {
                 className="my-masonry-grid mt-8"
                 columnClassName="my-masonry-grid_column"
             >
-                {collection.photos.map((photo, i) => (
-                    <img src={photo} alt={`Photo ${i}`} key={i} className="mb-4 rounded-lg" loading="lazy" />
-                ))}
-            </Masonry>
 
+                {collection.photos.map((photo, i) => (
+                    <div key={i} className="mb-4 min-h-[100px] rounded-lg bg-gray-100 flex justify-center items-center">
+
+                        <ImageLoad
+                            imgSrc={photo}
+                            imgAlt="Gallery photo"
+                            className="rounded-lg w-full "
+                        />
+                    </div>
+                ))}
+
+            </Masonry>
         </div>
     );
 }
 
 export default GalleryDetailPage;
+

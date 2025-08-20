@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import Linetitle from "../../components/LineTitleComponent"
 import { galleryData } from "../../i18n/galleryData.js";
+import ImageLoad from "../../components/ImageLoad";
+
+
 
 function GalleryPage({ translations, lang }) {
 
@@ -16,30 +19,30 @@ function GalleryPage({ translations, lang }) {
                     <div key={collection.id} className="group">
                         <div className="grid gap-2 grid-cols-2 grid-rows-2 mb-2 bg-[#eee] p-2 rounded-2xl">
                             {collection.photos[0] && (
-                                <div className="row-span-2 max-h-[210px] bg-[#040743] rounded-lg">
-                                    <img
-                                        src={collection.photos[0]}
-                                        alt={`${collection.id} preview 0`}
-                                        className="w-full h-full object-cover opacity-80 duration-300 easy group-hover:opacity-100 transition-all rounded-lg"
+                                <div className="row-span-2 h-[210px] w-full bg-[#040743] rounded-lg overflow-hidden flex justify-center items-center">
+                                    <ImageLoad
+                                        imgSrc={collection.photos[0]}
+                                        imgAlt={`${collection.id} preview 0`}
+                                        className="opacity-40 w-full h-full object-cover duration-300 easy group-hover:opacity-100 transition-all rounded-lg"
                                     />
                                 </div>
                             )}
 
 
                             {collection.photos[1] && (
-                                <div className="max-h-[100px] bg-[#040743] rounded-lg">
-                                    <img
-                                        src={collection.photos[1]}
-                                        alt={`${collection.id} preview 1`}
-                                        className="w-full h-full object-cover opacity-80 duration-300 easy group-hover:opacity-100 transition-all rounded-lg"
+                                <div className="h-[100px] w-full  bg-[#040743] rounded-lg overflow-hidden flex justify-center items-center">
+                                    <ImageLoad
+                                        imgSrc={collection.photos[1]}
+                                        imgAlt={`${collection.id} preview 0`}
+                                        className="w-full h-full object-cover opacity-40 duration-300 easy group-hover:opacity-100 transition-all rounded-lg"
                                     />
                                 </div>
                             )}
                             {collection.photos[2] && (
-                                <div className="max-h-[100px] bg-[#040743] rounded-lg">
-                                    <img
-                                        src={collection.photos[2]}
-                                        alt={`${collection.id} preview 2`}
+                                <div className="h-[100px] w-full bg-[#040743] rounded-lg overflow-hidden flex justify-center items-center">
+                                    <ImageLoad
+                                        imgSrc={collection.photos[2]}
+                                        imgAlt={`${collection.id} preview 0`}
                                         className="w-full h-full object-cover opacity-80 duration-300 easy group-hover:opacity-100 transition-all rounded-lg"
                                     />
                                 </div>

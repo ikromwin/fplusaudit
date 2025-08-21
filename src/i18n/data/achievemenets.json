@@ -175,6 +175,13 @@
         "expiredYear": "2030"
     },
     {
+        "categoryId": 5,
+        "name": "Ostonova Navbaxor Tolibovna",
+        "file": "/data/files/Quallification certificates 14.pdf",
+        "givenYear": "2025",
+        "expiredYear": "2030"
+    },
+    {
         "categoryId": 6,
         "name": "Yuldashev Farhodjon Maxmudjonovich - Ichki auditor sertifikati",
         "file": "/data/files/Other certifications 1.pdf",
@@ -255,6 +262,20 @@
         "categoryId": 6,
         "name": "Maxkamov Farxodjon Fazliddinovich - 2023-yilning eng yaxshi ichki auditori",
         "file": "/data/files/Other certifications 12.pdf",
+        "givenYear": "2023",
+        "expiredYear": ""
+    },
+    {
+        "categoryId": 6,
+        "name": "Ostonova Navbaxor Tolibovna - soliq maslahatchisining malaka sertifikati",
+        "file": "/data/files/Other certifications 13.pdf",
+        "givenYear": "2022",
+        "expiredYear": "2025"
+    },
+    {
+        "categoryId": 6,
+        "name": "Ostonova Navbaxor Tolibovna - IAPBE DipAFR advanced financial reporting",
+        "file": "/data/files/Other certifications 14.pdf",
         "givenYear": "2023",
         "expiredYear": ""
     }

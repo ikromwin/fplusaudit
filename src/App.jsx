@@ -65,7 +65,7 @@ function App() {
                             />
                             <Route
                                 path="/about/:id"
-                                element={<AboutDetails translations={achievements} lang={lang} />}
+                                element={<AboutDetails translations={translations}   lang={lang} />}
                             />
                             <Route
                                 path="/about/gallery/"

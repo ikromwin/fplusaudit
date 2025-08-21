@@ -6,7 +6,7 @@ import AchievementFullData from "../i18n/data/achievemenets.json"
 import AchievementCategory from "../i18n/data/category.json"
 
 
-export default function About({ translations, lang }) {
+export default function About({ translations,  lang }) {
     const [data, setData] = useState([]);
     const { id } = useParams();
 
@@ -16,7 +16,6 @@ export default function About({ translations, lang }) {
             const filteredData = AchievementFullData.filter(item => item.categoryId === parseInt(id));
             setData(filteredData);
         }
-
     }, [id]);
 
 
@@ -27,8 +26,8 @@ export default function About({ translations, lang }) {
             <table>
                 <thead>
                     <tr>
-                        <th>{translations.table_name}</th>
-                        <th>{translations.table_years}</th>
+                        <th>{translations.about.table_name}</th>
+                        <th>{translations.about.table_years}</th>
                     </tr>
                 </thead>
                 <tbody>

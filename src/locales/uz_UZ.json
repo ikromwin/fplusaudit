@@ -138,7 +138,9 @@
                 "description": "2023-yil 'Eng yaxshi ichki auditor' Respublika tanlovi g'olibi va 'Tashqi auditor va ichki auditor' malaka sertifikatlari egasi xalqaro toifadagi auditor."
             }
         ],
-        "achievements_title": "Yutuqlarimiz"
+        "achievements_title": "Yutuqlarimiz",
+        "table_name": "Nomi",
+        "table_years": "Yili"
     },
     "gallery": {
         "title": "Rasmalar",

@@ -139,7 +139,9 @@
                 "description": "'The winner of the 2023 Best 'Internal Auditor Republican Competition', holding both «External and internal auditor» qualification certificates, is recognized as an international-class auditor."
             }
         ],
-        "achievements_title": "Achienvements"
+        "achievements_title": "Achienvements",
+        "table_name": "Name",
+        "table_years": "Years"
     },
     "gallery": {
         "title": "Gallery",

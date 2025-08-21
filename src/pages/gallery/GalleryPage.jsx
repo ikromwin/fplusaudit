@@ -19,18 +19,18 @@ function GalleryPage({ translations, lang }) {
                     <div key={collection.id} className="group">
                         <div className="grid gap-2 grid-cols-2 grid-rows-2 mb-2 bg-[#eee] p-2 rounded-2xl">
                             {collection.photos[0] && (
-                                <div className="row-span-2 h-[210px] w-full bg-[#040743] rounded-lg overflow-hidden flex justify-center items-center">
+                                <div className="row-span-2 h-[210px] w-full bg-[#ddd] rounded-lg overflow-hidden flex justify-center items-center">
                                     <ImageLoad
                                         imgSrc={collection.photos[0]}
                                         imgAlt={`${collection.id} preview 0`}
-                                        className="opacity-40 w-full h-full object-cover duration-300 easy group-hover:opacity-100 transition-all rounded-lg"
+                                        className="opacity-40 w-screen h-[210px] object-cover duration-300 easy transition-all rounded-lg"
                                     />
                                 </div>
                             )}
 
 
                             {collection.photos[1] && (
-                                <div className="h-[100px] w-full  bg-[#040743] rounded-lg overflow-hidden flex justify-center items-center">
+                                <div className="h-[100px] w-full bg-[#ddd] rounded-lg overflow-hidden flex justify-center items-center">
                                     <ImageLoad
                                         imgSrc={collection.photos[1]}
                                         imgAlt={`${collection.id} preview 0`}
@@ -39,7 +39,7 @@ function GalleryPage({ translations, lang }) {
                                 </div>
                             )}
                             {collection.photos[2] && (
-                                <div className="h-[100px] w-full bg-[#040743] rounded-lg overflow-hidden flex justify-center items-center">
+                                <div className="h-[100px] w-full bg-[#ddd] rounded-lg overflow-hidden flex justify-center items-center">
                                     <ImageLoad
                                         imgSrc={collection.photos[2]}
                                         imgAlt={`${collection.id} preview 0`}
